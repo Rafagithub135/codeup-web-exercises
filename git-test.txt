@@ -1,1 +1,3 @@
 Getting Git is legit.
+But it can be frustrating sometimes.
+I think I'm starting to get it though.
