@@ -31,3 +31,11 @@ alert("You worked a total of " + (weeklyHoursWorkedGoogle +
 weeklyHoursWorkedAmazon + weeklyHoursWorkedFacebook) + " hours and your total pay is "
     + (paycheckGoogle + paycheckAmazon + paycheckFacebook))
 
+var classInterestedNotFull = prompt("Does the class you are interested have available room?")
+var classInterestedNoConflict = prompt("Does the class you're interested in conflict with your current schedule?")
+
+
+
+var premiumMember = prompt("Are you a Premium Member?")
+var offerValid = prompt("Is the offer still valid?")
+var quantityQualifies = ("How many items are you buying?")
