@@ -1,5 +1,5 @@
 "use strict";
-(function() {
+// (function() {
     /**
      * TODO:
      * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -136,23 +136,65 @@
      * console.logging the function's return value
      */
 
+// function analyzeColor(input) {
+
+    // if (input === 'red' || input === 'Red'){
+    //     return 'Hot embers can be red.';
+    // }   else if (input === 'blue' || input === 'Blue'){
+    //     return 'Oceans looked at from a distance appear blue.';
+    // }   else if (input === 'yellow' || input === 'Yellow'){
+    //     return 'The sun is bright yellow.';
+    // }   else if (input === 'orange' || input === 'Orange'){
+    //     return 'Amber gemstones are actually orange.';
+    // }   else if (input === 'white' || input === 'White'){
+    //     return 'Snow is white.';
+    // }   else;
+    //     return 'You have chosen a color that is not available.  Please choose again.';
+// }
+//     console.log(analyzeColor('grey'));
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-    var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
-    /**
-     * TODO:
-     * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
-     * You should see a different message every time you refresh the page
-     */
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        /**
+         * TODO:
+         * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+         * You should see a different message every time you refresh the page
+         */
+
+// console.log(analyzeColor(randomColor));
 
     /**
      * TODO:
      * Comment out the code above, and refactor your function to use a switch-case statement
      */
+
+    var analyzeColor = prompt('What color do you choose?')
+
+    switch (analyzeColor){
+        case 'red' || 'Red':
+            alert('Hot embers can be red');
+            break;
+        case 'blue' || 'Blue':
+            alert('Oceans looked at from a distance appear blue.');
+            break;
+        case 'yellow' || 'Yellow':
+            alert('The sun is bright yellow.');
+            break;
+        case 'orange' || 'Orange':
+            alert('Amber gemstones are actually orange.');
+            break;
+        case 'white' || 'White':
+            alert('Snow is white.');
+            break;
+        default:
+            alert(input + ' is not available.  Please choose another color.');
+            break;
+    }
 
     /**
      * TODO:
@@ -213,4 +255,4 @@
      * HINT: The way we prompt for a value could be improved
      */
 
-})();
+// })();
