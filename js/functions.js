@@ -173,28 +173,28 @@
      * Comment out the code above, and refactor your function to use a switch-case statement
      */
 
-    var analyzeColor = prompt('What color do you choose?')
-
-    switch (analyzeColor){
-        case 'red' || 'Red':
-            alert('Hot embers can be red');
-            break;
-        case 'blue' || 'Blue':
-            alert('Oceans looked at from a distance appear blue.');
-            break;
-        case 'yellow' || 'Yellow':
-            alert('The sun is bright yellow.');
-            break;
-        case 'orange' || 'Orange':
-            alert('Amber gemstones are actually orange.');
-            break;
-        case 'white' || 'White':
-            alert('Snow is white.');
-            break;
-        default:
-            alert(input + ' is not available.  Please choose another color.');
-            break;
-    }
+    // var analyzeColor = prompt('What color do you choose?');
+    //
+    // switch (analyzeColor){
+    //     case 'red':
+    //         alert('Hot embers can be red');
+    //         break;
+    //     case 'blue':
+    //         alert('Oceans looked at from a distance appear blue.');
+    //         break;
+    //     case 'yellow':
+    //         alert('The sun is bright yellow.');
+    //         break;
+    //     case 'orange':
+    //         alert('Amber gemstones are actually orange.');
+    //         break;
+    //     case 'white':
+    //         alert('Snow is white.');
+    //         break;
+    //     default:
+    //         return + analyzeColor + ' is not available.  Please choose another color.';
+    //         break;
+    // }
 
     /**
      * TODO:
@@ -202,6 +202,12 @@
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
+
+    // var newColor = prompt('What color would you like to discuss?');
+    //
+    // function analyzeColor(newColor){
+    //     alert('You chose ' + newColor + '.');
+    // }
 
     /* ########################################################################## */
 
@@ -224,6 +230,24 @@
      * Test your function by passing it various values and checking for the expected
      * return value.
      */
+// prompt('Please enter your lucky number: ');
+//
+//     function calculateTotal(num){
+//         if (num === 0);{
+//             return num * 1;
+//         }   else if (num === 1);{
+//         return num * .9;
+//         else if (num === 2);
+//         return num * .75;
+//         else if (num === 3);
+//         return num * .65;
+//         else if (num === 4);
+//         return num * .5;
+//         else if (nun === 5);
+//         return 'Your items are free!!!';
+//         else;
+//         return 'You have entered an invalid number';
+//     }
 
     /**
      * TODO:
