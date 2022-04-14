@@ -70,6 +70,6 @@
     var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
     console.log(names[0]);
     console.log(names[1]);
-    console.log(names[nameslength - 1]);
+    console.log(names[names.length - 1]);
 
 })();
