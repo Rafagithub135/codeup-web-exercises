@@ -7,10 +7,5 @@
         count = count + 1;
     }
 
-    var allCones = Math.floor(Math.random() * 50) + 50;
-
-do {
-    
-} while()
 
 })();
