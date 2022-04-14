@@ -1,8 +1,7 @@
-(function(){
+(function () {
     "use strict";
 
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray;
 
     /**
      * TODO:
@@ -11,7 +10,7 @@
      * console.log planetsArray to check your work
      */
 
-    planetsArray = planetsString.split('|');
+    var planetsArray = planetsString.split(', ');
     console.log(planetsArray);
 
     /**
@@ -24,5 +23,21 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
+
+    var planetsList = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+    console.log(planetsList);
+    // When the <br> tags are added, I get an error message, "Uncaught SyntaxError: Unexpected token '<' (at 27:35)"
+
+
+    <ul>
+        <li>'Mercury'</li>
+        <li>'Venus'</li>
+        <li>'Earth'</li>
+        <li>'Mars'</li>
+        <li>'Jupiter'</li>
+        <li>'Saturn'</li>
+        <li>'Uranus'</li>
+        <li>'Neptune</li>
+    </ul>;
 
 })();
