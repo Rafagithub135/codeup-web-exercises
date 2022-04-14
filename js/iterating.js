@@ -1,4 +1,4 @@
-(function(){
+(function () {
     "use strict";
 
     /**
@@ -38,7 +38,7 @@
      */
 
     var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
-    for(var i = 0; i < names.index; i++);
+    for (var i = 0; i < names.length; i++) ;
     {
         console.log('The name at index ' + i + ' is ' + names[i]);
     }
@@ -49,7 +49,7 @@
      */
 
     var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
-    names.forEach(function(name) {
+    names.forEach(function (name) {
         console.log(name + ' is a name in the array.');
     });
 
@@ -67,7 +67,16 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
+
+    function first(names) {
+        return names[0];
+    }
+    function second(names) {
+        return names[1];
+    }
+    function last(names) {
+        return names[names.length -1];
+    }
     console.log(names[0]);
     console.log(names[1]);
     console.log(names[names.length - 1]);
