@@ -6,28 +6,57 @@
 </head>
 <body>
 <form method="post" action="https://request-inspector.glitch.me/">
-    <input type="text" name="Name" placeholder="Enter your name:">
-    <input type="text" name="User Name" placeholder="Enter your username:">
+    <div>
+        <label for="full-name">Full Name</label>
+        <input id="full-name" type="text" name="Name" placeholder="Enter your name:"><br>
+    </div>
+    <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="User Name" placeholder="Enter your username:"><br>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password"><br>
+    </div>
+    <div>
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email"><br>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Bio</legend>
+            <textarea id="bio" name="bio" rows="5" cols="60">Tell us a little about yourself.
+        </textarea>
+        </fieldset>
+    </div>
+    <div>
+        <h3>How did you hear about us?</h3>
+        <fieldset>
+            <label id="billboard">Billboard</label>
+            <input id="billboard " type="radio" name="bbrd" value="a">
+            <label id="radio-advertisement">Radio Advertisement</label>
+            <input id="radio-advertisement " type="radio" name="radio" value="b">
+            <label id="internet-advertisement">Internet Advertisement</label>
+            <input id="internet-advertisement " type="radio" name="internet" value="c">
+            <label id="other">Other</label>
+            <input id="other " type="radio" name="other" value="d">
+        </fieldset>
+    </div>
+    <div>
+        <h3>What web browser are you using?</h3>
+        <select>
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="mozilla">Mozilla</option>
+            <option value="edge">Edge</option>
+        </select>
+    </div><br><br>
+
+
+    <button type="submit">Submit the form.</button>
+
 
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
