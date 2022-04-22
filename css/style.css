@@ -1,5 +1,5 @@
 .fancy-header {
-    color: purple;
+    color: blue;
     text-decoration: underline;
 }
 /* selector for id="container" */
@@ -31,4 +31,23 @@ selector-todo {
     that are a direct child of an element with class="article" */
 a {
     float:right;
+}
+
+h1 {
+    text-align: center;
+}
+h1, h2 {
+    color: peru;
+    text-decoration: underline;
+}
+h3 {
+    color: aqua;
+    text-align: center;
+}
+body {
+    background-color: aliceblue;
+    background-image: url("../img/The_Wichita_Falls_Waterfall.jpeg");
+}
+ul, ol, p, a, table {
+    color: aquamarine;
 }
