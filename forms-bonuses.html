@@ -5,74 +5,88 @@
     <title>Forms Extra</title>
 </head>
 <body>
-<div>
-    <h2 for="pizza">What Kind of Pizza Would You Like?</h2><br>
-    <h3>What Size Pizza Would You Like?</h3>
-    <fieldset>
-        <label for="12pizza">12"</label>
-        <input id="12pizza" type="radio" name="size">
-        <label for="14pizza">14"</label>
-        <input id="14pizza" type="radio" name="size">
-        <label for="16pizza">16"</label>
-        <input id="16pizza" type="radio" name="size">
-        <label for="18pizza">18"</label>
-        <input id="18pizza" type="radio" name="size">
-    </fieldset>
-</div>
-<br>
-<div>
-    <h3>What Type Of Bread?</h3>
-    <fieldset>
-        <label for="deepdish">Deep Dish</label>
-        <input id="deepdish" type="radio" name="type">
-        <label for="stuffed">Stuffed Crust</label>
-        <input id="stuffed" type="radio" name="type">
-        <label for="flat">Flat Bread</label>
-        <input id="flat" type="radio" name="type">
-    </fieldset>
-</div>
-<br>
-<div>
-    <h3>What Toppings Would You Like?</h3>
-    <fieldset>
-        <label for="peperoni">Peperoni</label>
-        <input id="peperoni" type="checkbox" name="peperoni">
-        <label for="xcheese">Extra Cheese</label>
-        <input id="xcheese" type="checkbox" name="xcheese">
-        <label for="sausage">Sausage</label>
-        <input id="sausage" type="checkbox" name="sausage">
-        <label for="mushrooms">Mushrooms</label>
-        <input id="mushrooms" type="checkbox" name="mushrooms">
-        <label for="onions">Onions</label>
-        <input id="onions" type="checkbox" name="onions">
-        <label for="greenpeppers">Green Peppers</label>
-        <input id="greenpeppers" type="checkbox" name="greenpeppers">
-        <label for="broccoli">Broccoli</label>
-        <input id="broccoli" type="checkbox" name="broccoli">
-        <label for="spinach">Spinach</label>
-        <input id="spinach" type="checkbox" name="spinach">
-        <label for="blackolives">Black Olives</label>
-        <input id="blackolives" type="checkbox" name="blackolives">
-        <label for="pineapple">Pineapple</label>
-        <input id="pineapple" type="checkbox" name="pineapple"> </input>
-    </fieldset>
-</div>
-<div>
-
-</div>
-<div>
-
-</div>
-<div>
-
-</div>
-<div>
-
-</div>
-<div>
-
-</div>
-
-
+<form method="post" action="https://request-inspector.glitch.me/">
+    <div>
+        <fieldset>
+            <label for="custname">Please enter your name: </label>
+            <input id="custname" type="text" name="name"><br>
+            <label for="custaddress">Please enter your address: </label>
+            <input id="custaddress" type="text" name="address"><br>
+            <label for="city">City</label>
+            <input id="city" type="text" name="city">
+            <label for="state">State</label>
+            <select id="state">
+                <option value="penn">Pennsylvania</option>
+                <option value="nj">New Jersey</option>
+                <option value="del">Delaware</option>
+                <option value="md">Maryland</option>
+            </select>
+            <label for="zip">Zip Code</label>
+            <input id="zip" value="number" name="zip">
+            <label for="phone">Area Code and Phone Number</label>
+            <input id="phone" value="(   )   -    " name="phone">
+        </fieldset>
+    </div>
+    <div>
+        <h2>What Kind of Pizza Would You Like?</h2><br>
+        <h3>What Size Pizza Would You Like?</h3>
+        <fieldset>
+            <label for="12pizza">12"</label>
+            <input id="12pizza" type="radio" name="size">
+            <label for="14pizza">14"</label>
+            <input id="14pizza" type="radio" name="size">
+            <label for="16pizza">16"</label>
+            <input id="16pizza" type="radio" name="size">
+            <label for="18pizza">18"</label>
+            <input id="18pizza" type="radio" name="size">
+        </fieldset>
+    </div>
+    <br>
+    <div>
+        <h3>What Type Of Bread?</h3>
+        <fieldset>
+            <label for="deepdish">Deep Dish</label>
+            <input id="deepdish" type="radio" name="type">
+            <label for="stuffed">Stuffed Crust</label>
+            <input id="stuffed" type="radio" name="type">
+            <label for="flat">Flat Bread</label>
+            <input id="flat" type="radio" name="type">
+        </fieldset>
+    </div>
+    <br>
+    <div>
+        <h3>What Toppings Would You Like?</h3>
+        <fieldset>
+            <label for="peperoni">Peperoni</label>
+            <input id="peperoni" type="checkbox" name="peperoni">
+            <label for="xcheese">Extra Cheese</label>
+            <input id="xcheese" type="checkbox" name="xcheese">
+            <label for="sausage">Sausage</label>
+            <input id="sausage" type="checkbox" name="sausage">
+            <label for="mushrooms">Mushrooms</label>
+            <input id="mushrooms" type="checkbox" name="mushrooms">
+            <label for="onions">Onions</label>
+            <input id="onions" type="checkbox" name="onions">
+            <label for="greenpeppers">Green Peppers</label>
+            <input id="greenpeppers" type="checkbox" name="greenpeppers">
+            <label for="broccoli">Broccoli</label>
+            <input id="broccoli" type="checkbox" name="broccoli">
+            <label for="spinach">Spinach</label>
+            <input id="spinach" type="checkbox" name="spinach">
+            <label for="blackolives">Black Olives</label>
+            <input id="blackolives" type="checkbox" name="blackolives">
+            <label for="pineapple">Pineapple</label>
+            <input id="pineapple" type="checkbox" name="pineapple">
+            <label for="ham">Ham</label>
+            <input id="ham" type="checkbox" name="ham">
+            <label for="canadianbacon">Canadian Bacon</label>
+            <input id="canadianbacon" type="checkbox" name="canadianbacon">
+        </fieldset>
+        <br>
+    </div>
+    <br>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
 </body>
-</html>
