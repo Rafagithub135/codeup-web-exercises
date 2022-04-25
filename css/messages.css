@@ -11,46 +11,29 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-.message-info {
-    color: blue;
-    font-weight: bold;
-    background-color: #CCDEFF;
+.message {
+    margin: 10px;
+    padding: 10px;
     border-radius: 5px;
-    width: 900px;
-    height: 30px;
-    padding-top: 8px;
-    padding-left: 10px;
+    border: 1px solid lightgrey;
+}
+.message-info {
+    color: #5C5AAE;
+    background-color: #CCDEFF;
+
 }
 
 .message-success {
-    color: green;
-    font-weight: bold;
+    color: #348251;
     background-color: #CFF3DA;
-    border-radius: 5px;
-    width: 900px;
-    height: 30px;
-    padding-top: 8px;
-    padding-left: 10px;
 }
 
 .message-warning {
-    color: orange;
-    font-weight: bold;
+    color: #98862A;
     background-color: #FCFBC9;
-    border-radius: 5px;
-    width: 900px;
-    height: 30px;
-    padding-top: 8px;
-    padding-left: 10px;
 }
 
 .message-error {
-    color: red;
-    font-weight: bold;
+    color: #CD8C97;
     background-color: #FAD2D6;
-    border-radius: 5px;
-    width: 900px;
-    height: 30px;
-    padding-top: 8px;
-    padding-left: 10px;
 }
