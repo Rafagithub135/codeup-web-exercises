@@ -187,12 +187,13 @@
  */
 var someNumber = confirm('Would you like to enter a number?');
 someNumber = prompt("Enter a number: ");
-if (someNumber.istype === Number) {
-    alert(someNumber + 100);
-    alert(someNumber >= 0) ? 'Your number is positive.' : 'Your number is negative');
-    alert(someNumber % 2 === 0) ? 'Your number is even' : 'Your number is odd.');
+console.log(someNumber);
+if (isNaN(parseFloat(someNumber))) {
+    alert('That is the incorrect type of data! That is a ' + typeof someNumber);
 } else {
-    return "That is not a number.";
+    alert(parseFloat(someNumber) + 100);
+    alert(someNumber >= 0 ? 'Your number is positive.' : 'Your number is negative');
+    alert(someNumber % 2 === 0 ? 'Your number is even' : 'Your number is odd.');
 }
 
 // })();
