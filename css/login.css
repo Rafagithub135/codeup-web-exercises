@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     padding: 0;
     margin: 0;
 }
@@ -70,7 +70,7 @@ fieldset {
     padding: 8px;
     text-decoration-color: white;
     font-weight: bold;
-    border: 1px;
+    border: 8px;
     border-color: grey;
     color: white;
 
@@ -87,12 +87,12 @@ fieldset {
     margin-bottom: .5em;
     margin-left: auto;
     margin-right: auto;
-    calc(100% - 20px);
+
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
 
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: 100%;
+    width: calc(100% - 20px);
 }
