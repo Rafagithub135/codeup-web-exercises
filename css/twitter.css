@@ -115,8 +115,7 @@ a {
 }
 .media-body {
     float: left;
-    width: calc(100% - 5em);
-    margin: 0 .5em;
+    width: calc(100% - 50px);
 }
 .img-circle {
     border-radius: 100%;
