@@ -13,15 +13,15 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 //
 //
 // Write a function, returnEveryOtherElement, that takes in an array of inputs and returns an array of every other input, starting with the first. Assume the array will contain at least three elements. The function should not mutate the input array.-->
-
-function returnEveryOtherElement(array) {
-    var outputArray = []''
-    for (var i = 0; i < array.length -  1; i += 1);
-        if (i % 2 === 0){
-
-        }
-}
-console.log(input);
+//
+// function returnEveryOtherElement(array) {
+//     var outputArray = []''
+//     for (var i = 0; i < array.length -  1; i += 1);
+//         if (i % 2 === 0){
+//
+//         }
+// }
+// console.log(input);
 
 // Examples...-->
 //
