@@ -72,11 +72,11 @@ a {
 .profile-image {
     position: absolute;
     top: 250px;
-    z-index: auto;
 }
 .profile-form {
-    float: left;
+    float: right;
     line-height: 80px;
+
 }
 .profile-items {
     padding: 0px;
@@ -95,7 +95,6 @@ a {
     font-weight: bold;
     padding: 8px;
     border-radius: 5px;
-    postition: absolute;
 }
 .btn-large {
     font-size: 1.3em;
@@ -103,8 +102,9 @@ a {
 }
 .media {
     width: 100%;
+
     background-color: #FFF;
-    border-bottom: 1px #DDD;
+    border-bottom: 1px solid #DDD;
     padding: .5em;
     overflow: auto;
 }
