@@ -25,19 +25,40 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 
 // Examples...-->
 //
-returnEveryOtherElement([1, 2, 3, 4, 5]) // returns [1, 3, 5]-->
-returnEveryOtherElement([1, 2, 3]) // returns [1, 3]-->
-returnEveryOtherElement(['bob', 'sally', 'cathy', 'fred']) // returns ['bob', 'cathy']-->
-returnEveryOtherElement([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]) // returns [10, 8, 6, 4, 2]-->
+// returnEveryOtherElement([1, 2, 3, 4, 5]) // returns [1, 3, 5]-->
+// returnEveryOtherElement([1, 2, 3]) // returns [1, 3]-->
+// returnEveryOtherElement(['bob', 'sally', 'cathy', 'fred']) // returns ['bob', 'cathy']-->
+// returnEveryOtherElement([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]) // returns [10, 8, 6, 4, 2]-->
+//
+// // 4-26
+// // Write a javascript function that takes in a string, and returns the string in alphabetical order.
+//
+// function abcString(str) {
+//     var strArray = str.split('');
+//     var alphaOrder = strArray.sort();
+//     var result = alphaOrder.join('');
+//     return result;
+// }
 
-// 4-26
-// Write a javascript function that takes in a string, and returns the string in alphabetical order.
+// console.log("glasses hat xray baseball")
 
-function abcString(str) {
-    var strArray = str.split('');
-    var alphaOrder = strArray.sort();
-    var result = alphaOrder.join('');
-    return result;
+// 4-27
+
+var lowest
+var highest
+function createNumObject(x, y) {
+    if (x > y){
+        lowest = y;
+    } else if (x < y) {
+        lowest = x;
+    }
+    if (x < y) {
+        highest = y;
+    } else if (x > y) {
+        highest = x
+    }
+    if (x == y) {
+        lowest = x, highest = y;
+    }
 }
 
-console.log("glasses hat xray baseball")
