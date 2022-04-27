@@ -47,18 +47,20 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 var lowest
 var highest
 function createNumObject(x, y) {
-    if (x > y){
-        lowest = y;
-    } else if (x < y) {
-        lowest = x;
-    }
-    if (x < y) {
-        highest = y;
-    } else if (x > y) {
-        highest = x
-    }
-    if (x == y) {
-        lowest = x, highest = y;
-    }
+  if (x >= y) {
+  return {
+      lowest: y,
+      highest: x
+  }
+  } else if (x < y) {
+      return {
+          lowest: x,
+          highest: y
+      }
+  }
 }
+
+console.log(createNumObject(1, 2), {lowest: 1, highest: 2});
+console.log(createNumObject(5, 2), {lowest: 5, highest: 2});
+console.log(createNumObject(5, 5), {lowest: 5, highest: 5});
 
