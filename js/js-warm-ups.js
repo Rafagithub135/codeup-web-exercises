@@ -64,5 +64,7 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 // console.log(createNumObject(5, 2), {lowest: 2, highest: 5});
 // console.log(createNumObject(5, 5), {lowest: 5, highest: 5});
 
-// 4-28
+// 5/3
+
+
 
