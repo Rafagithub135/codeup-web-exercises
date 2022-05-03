@@ -34,8 +34,6 @@ body {
     border-radius: 5px;
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     /* TODO: Add an automatic margin and a flex container to this selector */
 }
 
