@@ -64,7 +64,66 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 // console.log(createNumObject(5, 2), {lowest: 2, highest: 5});
 // console.log(createNumObject(5, 5), {lowest: 5, highest: 5});
 
-// 5/3
+// 5/4
 
+// Consider an array of product objects:
+const products - [
+    {
+        name: 'Hammer',
+        priceInCents: 4500,
+        isInStock: true
+    },
+    {
+        name: 'Computer',
+        priceInCents: 45000,
+        isInStock: true
+    },
+    {
+        name: 'Water Bottle',
+        priceInCents: 3300,
+        isInStock: true
+    }
+    {
+        name: 'car',
+        priceInCents: 990000,
+        isInStock: true
+    }
+    {
+        name: 'Cup',
+        priceInCents: 230,
+        isInStock: false
+    }
+    {
+        name: 'Book',
+        priceInCents: 540,
+        isInStock: false
+    },
+];
 
+var inStockItem = 0;
 
+function returnMostExpensiveProductObjectInStock(products) {
+    return Math.max.apply(Math, products);
+}
+
+function returnLeastExpensiveProductObjectInStock(products) {
+    return Math.min.apply(Math, products);
+}
+
+var averageInStockPrice = 0;
+
+function returnAveragePriceOfAllProductsInStock(products) {
+    if (isInStock === true) {
+        averageInStockPrice += priceInCents;
+    }
+    return averageInStockPrice / products.length;
+}
+
+var notInStock = 0;
+
+function returnProductObjectsNotInStock(products) {
+    if (isInStock !== true) {
+        notInStock += priceInCents;
+    }
+    return notInStock;
+}
