@@ -67,63 +67,20 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 // 5/4
 
 // Consider an array of product objects:
-const products - [
-    {
-        name: 'Hammer',
-        priceInCents: 4500,
-        isInStock: true
-    },
-    {
-        name: 'Computer',
-        priceInCents: 45000,
-        isInStock: true
-    },
-    {
-        name: 'Water Bottle',
-        priceInCents: 3300,
-        isInStock: true
-    }
-    {
-        name: 'car',
-        priceInCents: 990000,
-        isInStock: true
-    }
-    {
-        name: 'Cup',
-        priceInCents: 230,
-        isInStock: false
-    }
-    {
-        name: 'Book',
-        priceInCents: 540,
-        isInStock: false
-    },
-];
+// const products - [
 
-var inStockItem = 0;
 
-function returnMostExpensiveProductObjectInStock(products) {
-    return Math.max.apply(Math, products);
+// 5-9
+
+// Write a function that accepts an array of numbers and returns the average.
+
+var sumArray = 0;
+function arrayAverage(array) {
+    for (var i = 0; i < array.length; i++){
+        sumArray += array[i];
+    }
+    return  sumArray / array.length;
 }
 
-function returnLeastExpensiveProductObjectInStock(products) {
-    return Math.min.apply(Math, products);
-}
-
-var averageInStockPrice = 0;
-
-function returnAveragePriceOfAllProductsInStock(products) {
-    if (isInStock === true) {
-        averageInStockPrice += priceInCents;
-    }
-    return averageInStockPrice / products.length;
-}
-
-var notInStock = 0;
-
-function returnProductObjectsNotInStock(products) {
-    if (isInStock !== true) {
-        notInStock += priceInCents;
-    }
-    return notInStock;
-}
+console.log([0, 3. 5. 6. 21]);
+console.log([0, 3. 5. 7. 10]);
