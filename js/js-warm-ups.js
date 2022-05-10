@@ -73,14 +73,38 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 // 5-9
 
 // Write a function that accepts an array of numbers and returns the average.
+//
+// var sumArray = 0;
+// function arrayAverage(array) {
+//     for (var i = 0; i < array.length; i++){
+//         sumArray += array[i];
+//     }
+//     return  sumArray / array.length;
+// }
+//
+// console.log([0, 3, 5, 6, 21]);
+// console.log([0, 3, 5, 7, 10]);
 
-var sumArray = 0;
-function arrayAverage(array) {
-    for (var i = 0; i < array.length; i++){
-        sumArray += array[i];
+
+let classes = [
+    {class: "6th grade history", students: 18},
+    {class: "7th grade history", students: 20},
+    {class: "8th grade history", students: 22},
+]
+
+function totalStudents() {
+    var total = 0;
+    for (var i = 0; i < classes.length; i++) {
+        total += classes[i].students;
     }
-    return  sumArray / array.length;
+    return total;
 }
 
-console.log([0, 3, 5, 6, 21]);
-console.log([0, 3, 5, 7, 10]);
+var max = 0
+function maxStudents() {
+    for (var i = 0; i < classes.length; i++) {
+        if (max < classes[i].students) {
+            max = classes[i].students;
+        }
+    }
+}
