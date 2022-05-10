@@ -230,33 +230,23 @@
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-// prompt('Please enter your lucky number: ');
-//
+
+var num = prompt('Please enter your lucky number: ');
 function calculateTotal(num) {
-    if (num === 0) ;
-    {
+    if (num === 0) {
         return num * 1;
-    }
-else
-    if (num === 1) ;
-    {
+    } else if (num === 1) {
         return num * .9;
-    else
-        if (num === 2) ;
+    } else if (num === 2) {
         return num * .75;
-    else
-        if (num === 3) ;
+    } else if (num === 3) {
         return num * .65;
-    else
-        if (num === 4) ;
+    } else if (num === 4) {
         return num * .5;
-    else
-        if (nun === 5) ;
+    } else if (num === 5) {
         return 'Your items are free!!!';
-    else
-        ;
+    } else
         return 'You have entered an invalid number';
-    }
 }
 
 /**
@@ -269,7 +259,6 @@ else
  */
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
-
 
 
 /**

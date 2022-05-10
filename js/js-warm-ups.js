@@ -82,5 +82,5 @@ function arrayAverage(array) {
     return  sumArray / array.length;
 }
 
-console.log([0, 3. 5. 6. 21]);
-console.log([0, 3. 5. 7. 10]);
+console.log([0, 3, 5, 6, 21]);
+console.log([0, 3, 5, 7, 10]);
