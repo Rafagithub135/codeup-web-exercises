@@ -85,26 +85,38 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 // console.log([0, 3, 5, 6, 21]);
 // console.log([0, 3, 5, 7, 10]);
 
+// 5-10
+//
+// let classes = [
+//     {class: "6th grade history", students: 18},
+//     {class: "7th grade history", students: 20},
+//     {class: "8th grade history", students: 22},
+// ]
+//
+// function totalStudents() {
+//     var total = 0;
+//     for (var i = 0; i < classes.length; i++) {
+//         total += classes[i].students;
+//     }
+//     return total;
+// }
+//
+// var max = 0
+// function maxStudents() {
+//     for (var i = 0; i < classes.length; i++) {
+//         if (max < classes[i].students) {
+//             max = classes[i].students;
+//         }
+//     }
+// }
 
-let classes = [
-    {class: "6th grade history", students: 18},
-    {class: "7th grade history", students: 20},
-    {class: "8th grade history", students: 22},
-]
+// 5-11
 
-function totalStudents() {
-    var total = 0;
-    for (var i = 0; i < classes.length; i++) {
-        total += classes[i].students;
-    }
-    return total;
+// Write a function called convertToObject that takes in a string that is the name of a class, and a number that is the number of students, and returns an object with the properties 'class' and 'students'.
+
+function convertToObject(str, num) {
+    return {class: str, number: num};
 }
+console.log('class', 22)
+console.log('class', 35)
 
-var max = 0
-function maxStudents() {
-    for (var i = 0; i < classes.length; i++) {
-        if (max < classes[i].students) {
-            max = classes[i].students;
-        }
-    }
-}
