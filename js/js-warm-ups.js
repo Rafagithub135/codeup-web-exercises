@@ -163,7 +163,7 @@ var neighborhood1 = {
 
 function isDesirable(neighborhoodObject) {
     var totalRating = 0;
-    for (i = 0; i < neighborhoodObject) {
+    for (i = 0; i < neighborhoodObject; i++) {
         totalRating += neighborhoodObject.schools[i].rating;
     }
     return neighborhoodObject.medianHomePrice < 300000 && neighborhoodObject.crimeRate === "low" && totalRating >= 24;
