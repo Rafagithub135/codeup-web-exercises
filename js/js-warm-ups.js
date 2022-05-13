@@ -122,50 +122,50 @@ console.log('class', 35)
 
 // Write a function that takes a neighborhood object and determines if it is desirable.  A neighborhood is desirable if the  median home price is less than 300000, crime rates are low, and teh total rating of schools is at least 24.
 
-var neighborhood1 = {
-    neighborhood: "Lovely Estates",
-    medianHomePrice: 280000,
-    pool: true,
-    tennis: false,
-    crimeRate: "low",
-    schools: [
-        {name: "es1", rating: 8},
-        {name: "ms2", rating: 6},
-        {name: "hs3", rating: 8}
-    ]
-}
-
-var neighborhood1 = {
-    neighborhood: "Luminous Estates",
-    medianHomePrice: 270000,
-    pool: true,
-    tennis: false,
-    crimeRate: "low",
-    schools: [
-        {name: "es1", rating: 8},
-        {name: "ms2", rating: 8},
-        {name: "hs3", rating: 8}
-    ]
-}
-
-var neighborhood1 = {
-    neighborhood: "Ginormous Ego Estates",
-    medianHomePrice: 350000,
-    pool: true,
-    tennis: true,
-    crimeRate: "low",
-    schools: [
-        {name: "es1", rating: 9},
-        {name: "ms2", rating: 9},
-        {name: "hs3", rating: 9}
-    ]
-}
-
-function isDesirable(neighborhoodObject) {
-    var totalRating = 0;
-    for (i = 0; i < neighborhoodObject; i++) {
-        totalRating += neighborhoodObject.schools[i].rating;
-    }
-    return neighborhoodObject.medianHomePrice < 300000 && neighborhoodObject.crimeRate === "low" && totalRating >= 24;
-}
+// var neighborhood1 = {
+//     neighborhood: "Lovely Estates",
+//     medianHomePrice: 280000,
+//     pool: true,
+//     tennis: false,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "es1", rating: 8},
+//         {name: "ms2", rating: 6},
+//         {name: "hs3", rating: 8}
+//     ]
+// }
+//
+// var neighborhood1 = {
+//     neighborhood: "Luminous Estates",
+//     medianHomePrice: 270000,
+//     pool: true,
+//     tennis: false,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "es1", rating: 8},
+//         {name: "ms2", rating: 8},
+//         {name: "hs3", rating: 8}
+//     ]
+// }
+//
+// var neighborhood1 = {
+//     neighborhood: "Ginormous Ego Estates",
+//     medianHomePrice: 350000,
+//     pool: true,
+//     tennis: true,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "es1", rating: 9},
+//         {name: "ms2", rating: 9},
+//         {name: "hs3", rating: 9}
+//     ]
+// }
+//
+// function isDesirable(neighborhoodObject) {
+//     var totalRating = 0;
+//     for (i = 0; i < neighborhoodObject; i++) {
+//         totalRating += neighborhoodObject.schools[i].rating;
+//     }
+//     return neighborhoodObject.medianHomePrice < 300000 && neighborhoodObject.crimeRate === "low" && totalRating >= 24;
+// }
 
