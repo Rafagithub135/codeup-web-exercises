@@ -1,8 +1,11 @@
 'use strict'
 $(document).ready(function() {
-   $('.codeup').css({'border': '1px solid red'});
+   var lists = $('li').html;
 
+   var headings = $('h1').html;
+   alert(headings);
 
+    var paragraphs = $('p').html;
 
 
 
