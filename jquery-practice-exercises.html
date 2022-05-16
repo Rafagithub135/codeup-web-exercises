@@ -2,15 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dom Practice</title>
-</head>
-<body>
-<script>
-    'use strict';
-<text id="color">
+    <title>Document Object Model</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
 
-</text>
-<button ></button>
+        .question {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>Lets practice DOM!</h1>
+
+<div class="question">
+    <h1>Question 1</h1>
+    <input type="color" id="color">
+    <button type="button" id="changeColor">Button!</button>
+</div>
+
+<div class="question">
+    <h1>Question 2</h1>
+    <input type="text" id="todo">
+    <button type="button" id="addTodo">Add Todo</button>
+    <ul id="todosList">
+    </ul>
+</div>
+
+
+<div class="question">
+    <h1>Question 3</h1>
+    <p>All these H1 Tags should be changing size!</p>
+    <button id="toggleH1">Toggle!</button>
+</div>
+
+<div class="question">
+    <br>
+    <br>
+    <h1>Question 4</h1>
+    <br>
+    <br>
+</div>
+<div class="question">
+    <h1>Question 5</h1>
+    <button id="google">Google</button>
+</div>
+<div class="question">
+    <h1>Question 6</h1>
+    <label for="userInput">Enter String here: </label>
+    <input type="text" id="userInput" placeholder="Enter something to add!">
+    <button id="submitString">Add</button>
+    <p id="madLib">Hello</p>
+</div>
+
+<script>
+
+    'use strict'
+    //     DOM Practice Question #1
+    //     Create an HTML file called dom-practice.html in codeup-web-exercises repos.
+    // Put a text input on an html page with id of "color"
+    // Put a button on the page with id of "changeColor"
+    // Use an Event listener to trigger when the button is clicked.
+    //         Use the value to change the background-color of the page to match the user's input value.
+    //         example of input: "#00000", "black", "#FF00FF"
+
     var button = document.getElementById("changeColor");
     var color = document.querySelector("#color");
     var body = document.querySelector("body");
@@ -22,19 +82,6 @@
         body.style.backgroundColor = color.value
     })
 
-
-<p id="doubleSize">Hello World!</p>
-document.getElementById(#doubleSize).addEventListener(dblclick, );
-
-console.log()
-
-    //     DOM Practice Question #1
-    //     Create an HTML file called dom-practice.html in codeup-web-exercises repos.
-    // Put a text input on an html page with id of "color"
-    // Put a button on the page with id of "changeColor"
-    // Use an Event listener to trigger when the button is clicked.
-    //         Use the value to change the background-color of the page to match the user's input value.
-    //         example of input: "#00000", "black", "#FF00FF"
 
     // DOM Practice Question #2
 
@@ -77,23 +124,7 @@ console.log()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 </body>
+
 </html>
