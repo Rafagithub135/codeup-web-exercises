@@ -1,9 +1,4 @@
-<style>
-    .invisible {
-    visibility: hidden;
-}
 
-</style>
 
 
 <p>Top Ten Questions about Glacier National Park</p>
