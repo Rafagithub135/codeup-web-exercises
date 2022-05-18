@@ -5,20 +5,23 @@
     <title>Attributes</title>
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         .box {
             width: 50px;
             height: 50px;
             background-color: red;
         }
+
         .cool-box {
             width: 200px;
             height: 200px;
             background-color: aqua;
         }
+
         .awesome-title {
-            font-family: "Comic Sans MS",serif;
+            font-family: "Comic Sans MS", serif;
             font-size: 40px;
             font-weight: bold;
             background-color: blue;
@@ -26,115 +29,189 @@
             padding: 10px;
             border-radius: 50px;
         }
+
         .night-mode {
             background: black;
             color: whitesmoke;
+        }
+
+        .invisible {
+            visibility: hidden;
         }
     </style>
 </head>
 <body>
 <main class="container">
-    <h1 class="text-center">Sign In</h1>
-    <div class="box"></div>
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Login Form</h3>
-            <button id="night-mode-btn" class="btn btn-success">Night Mode</button>
-            <form action="" method="POST">
-                <div class="form-group">
-                    <label for="pass">Password</label>
-                    <input class="form-control" type="password" id="pass">
-                </div>
-                <div class="form-group">
-                    <label for="verify">Verify Password</label>
-                    <input class="form-control" type="password" id="verify">
-                </div>
-                <button id="password-btn" class="btn btn-primary btn-block invisible">Login</button>
-            </form>
-        </div>
-    </div>
+<!--    <h1 class="text-center">Sign In</h1>-->
+<!--    <div class="box"></div>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-6">-->
+<!--            <h3>Login Form</h3>-->
+<!--            <button id="night-mode-btn" class="btn btn-success">Night Mode</button>-->
+<!--            <form action="" method="POST">-->
+<!--                <div class="form-group">-->
+<!--                    <label for="pass">Password</label>-->
+<!--                    <input class="form-control" type="password" id="pass">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="verify">Verify Password</label>-->
+<!--                    <input class="form-control" type="password" id="verify">-->
+<!--                </div>-->
+<!--                <button id="password-btn" class="btn btn-primary btn-block invisible">Login</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+    <section>
+        <p>Top Ten Questions about Glacier National Park</p>
+        <dl>
+            <dt>Where is Glacier National Park located?</dt>
+            <dd class="invisible">Glacier National Park is located in northwestern Montana on the U.S./Canadian border.
+                Access to the park from
+                the east and west is along U.S. Highway 2. Park headquarters is located in West Glacier.
+            </dd>
+            <dt>When is the park open?</dt>
+            <dd class="invisible">Glacier National Park is open year-round, 24 hours a day. In the fall winter and
+                spring, some roads are
+                inaccessible by car due to snow.
+            </dd>
+            <dt>What does it cost to enter the park?</dt>
+            <dd class="invisible">Glacier National Park is open year-round, 24 hours a day. In the fall winter and
+                spring, some roads are
+                inaccessible by car due to snow.
+            </dd>
+            <dt>Where are the closest airports to the park? Is there transportation from the airports to the park?</dt>
+            <dd class="invisible">Glacier Park International Airport in Kalispell, Montana is 25 miles west of park
+                headquarters in West Glacier,
+                Montana.
+            </dd>
+            <dt>What is the closest train station to the park?</dt>
+            <dd class="invisible">Amtrak rail lines parallel the southern and southwestern borders of the park. Amtrak
+                stops at West Glacier
+                (Belton), East Glacier (summer only), and Essex (upon request).
+            </dd>
+            <dt>What transportation is available within the park?</dt>
+            <dd class="invisible">In addition to private automobiles, guided tours are available in the main sections of
+                the park. Contact Glacier
+                Park, Inc. and Sun Tours for information (see addresses and telephone numbers below). Rental cars are
+                available
+                in neighboring communities.
+            </dd>
+            <dt>Where are the visitor centers located in the park?</dt>
+            <dd class="invisible">Visitor centers are located in Apgar, Logan Pass, and St. Mary. Each of these visitor
+                centers, as well as the
+                Many Glacier and Two Medicine Ranger Stations, have park rangers on duty throughout the summer months to
+                answer
+                questions and provide information. During the winter months, Apgar Visitor Center is open on week-ends.
+            </dd>
+            <dt>Do you have campgrounds in the park? Can I make a reservation?</dt>
+            <dd class="invisible">Glacier National Park has 13 campgrounds, which provide just over 1000 campsites. Most
+                of the campgrounds are
+                operated on a "first come, first serve" basis. Fish Creek and St. Mary Campgrounds will be available for
+                reservation by calling 1-800-365-2267. Click here for more detailed information on camping.
+            </dd>
+            <dt>Is it possible to reserve a backcountry campsite?</dt>
+            <dd class="invisible">Reservations for backcountry campsites may be made in advance, beginning April 1 for
+                the upcoming summer. For
+                further information on backcountry camping and for making reservations, visit our website section on
+                Backcountry
+                Camping.
+            </dd>
+            <dt>Can I drive my RV along the Going-to-the-Sun Road?</dt>
+            <dd class="invisible">Vehicles, and vehicle combinations, longer than 21 feet (including bumpers) or wider
+                than 8 feet (including
+                mirrors) are prohibited between Avalanche Campground and the Sun Point parking area. You may however,
+                drive to
+                Avalanche if traveling east, and to Sun Point, if traveling west. Vehicles over 10 feet in height may
+                have
+                difficulty driving west from Logan Pass due to rock overhangs. Stock trucks and trailers may access
+                Packers
+                Roost and Siyeh Bend.
+            </dd>
+        </dl>
+    </section>
 </main>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+<script src="js/jquery-3.6.0.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 <script>
-
-    $(function() {
-
+    $(function () {
         "use strict";
+
+
+        $(document).ready(function (e) {
+            e.target('dd').click.toggleClass('invisible')
+        })
+
 
 // ==== Getter (returns a value)
 
 
 // get the current inner HTML of the h1 element
+        $('h1').
 
-        // console.log($('h1').text())
+            // console.log($('h1').text())
 
-// get the current display value of the box
+            // get the current display value of the box
 
-        // console.log($('.box').css('background-color'));
-
-
-// ==== Setter (returns a jQuery object)
-
-// make box bigger and round with multiple css methods
-
-        // $('.box').css('width', '200px');
-        // $('.box').css('height', '200px');
-
-        // $('.box').css('width', '200px')
-        //     .css('height')
-        //     .css('background-color', 'blue');
+            // console.log($('.box').css('background-color'));
 
 
-        // $('.box').css('background', 'blue')
-        //     .text('hello')
-        //     .css('border-radius', '50px');
+            // ==== Setter (returns a jQuery object)
 
-        // $('.box').css({width: '200px', height: '200px'});
+            // make box bigger and round with multiple css methods
 
+            // $('.box').css('width', '200px');
+            // $('.box').css('height', '200px');
 
-
-// ==== addClass() and removeClass()
-
-// Apply cool-box to .box initially
-
-// $('.box').removeClass('box')
-//     .addClass('cool-box');
-
-// Apply cool-box only when hovering over .box
-
-// $('.box').hover(function() {
-//     $(this).addClass('cool-box');
-// }, function() {
-//     $(this).removeClass('cool-box');
-// });
-
-        // console.log($('.box').hasClass('box'));
+            // $('.box').css('width', '200px')
+            //     .css('height')
+            //     .css('background-color', 'blue');
 
 
-// only make submit button visible if password fields match and are at least 5 chars long
+            // $('.box').css('background', 'blue')
+            //     .text('hello')
+            //     .css('border-radius', '50px');
 
-        // $('input[type=password]').keyup(function() {
-        //     if ($('#pass').val() === $('#verify').val() && $('#pass').val().length > 5) {
-        //         $('#password-btn').removeClass('invisible');
-        //     } else {
-        //         // TODO: refactor function to hide the submit button when the user changes the passwords after matching
-        //         $('#password-btn').addClass('invisible');
-        //     }
-        // })
+            // $('.box').css({width: '200px', height: '200px'});
 
 
+            // ==== addClass() and removeClass()
+
+            // Apply cool-box to .box initially
+
+            // $('.box').removeClass('box')
+            //     .addClass('cool-box');
+
+            // Apply cool-box only when hovering over .box
+
+            // $('.box').hover(function() {
+            //     $(this).addClass('cool-box');
+            // }, function() {
+            //     $(this).removeClass('cool-box');
+            // });
+
+            // console.log($('.box').hasClass('box'));
 
 
-// ====  toggleClass()
+            // only make submit button visible if password fields match and are at least 5 chars long
 
-// toggle awesome-title class on h1 when double-clicking it. console log if it has the class
+            // $('input[type=password]').keyup(function() {
+            //     if ($('#pass').val() === $('#verify').val() && $('#pass').val().length > 5) {
+            //         $('#password-btn').removeClass('invisible');
+            //     } else {
+            //         // TODO: refactor function to hide the submit button when the user changes the passwords after matching
+            //         $('#password-btn').addClass('invisible');
+            //     }
+            // })
 
-        $('h1').dblclick(function() {
+
+            // ====  toggleClass()
+
+            // toggle awesome-title class on h1 when double-clicking it. console log if it has the class
+
+            $('h1').dblclick(function () {
             $(this).toggleClass('awesome-title');
         });
-
 
 
 // when clicking Night Mode button, add and remove night-mode class to body element
@@ -146,3 +223,47 @@
 
 </body>
 </html>
+
+
+<!--Top Ten Questions about Glacier National Park-->
+
+
+<!--Q: Where is Glacier National Park located?-->
+<!--A:-->
+<!--Glacier National Park is located in northwestern Montana on the U.S./Canadian border. Access to the park from the east and west is along U.S. Highway 2. Park headquarters is located in West Glacier.-->
+
+<!--Q: When is the park open?-->
+<!--A:-->
+<!--Glacier National Park is open year-round, 24 hours a day. In the fall winter and spring, some roads are inaccessible by car due to snow.-->
+
+<!--Q: What does it cost to enter the park?-->
+<!--A:-->
+<!--Glacier National Park is open year-round, 24 hours a day. In the fall winter and spring, some roads are inaccessible by car due to snow.-->
+
+<!--Q: Where are the closest airports to the park? Is there transportation from the airports to the park?-->
+<!--A:-->
+<!--Glacier Park International Airport in Kalispell, Montana is 25 miles west of park headquarters in West Glacier, Montana.-->
+
+<!--Q: What is the closest train station to the park?-->
+<!--A:-->
+<!--Amtrak rail lines parallel the southern and southwestern borders of the park. Amtrak stops at West Glacier (Belton), East Glacier (summer only), and Essex (upon request).-->
+
+<!--Q: What transportation is available within the park?-->
+<!--A:-->
+<!--In addition to private automobiles, guided tours are available in the main sections of the park. Contact Glacier Park, Inc. and Sun Tours for information (see addresses and telephone numbers below). Rental cars are available in neighboring communities.-->
+
+<!--Q: Where are the visitor centers located in the park?-->
+<!--A:-->
+<!--Visitor centers are located in Apgar, Logan Pass, and St. Mary. Each of these visitor centers, as well as the Many Glacier and Two Medicine Ranger Stations, have park rangers on duty throughout the summer months to answer questions and provide information. During the winter months, Apgar Visitor Center is open on week-ends.-->
+
+<!--Q: Do you have campgrounds in the park? Can I make a reservation?-->
+<!--A:-->
+<!--Glacier National Park has 13 campgrounds, which provide just over 1000 campsites. Most of the campgrounds are operated on a "first come, first serve" basis. Fish Creek and St. Mary Campgrounds will be available for reservation by calling 1-800-365-2267. Click here for more detailed information on camping.-->
+
+<!--Q: Is it possible to reserve a backcountry campsite?-->
+<!--A:-->
+<!--Reservations for backcountry campsites may be made in advance, beginning April 1 for the upcoming summer. For further information on backcountry camping and for making reservations, visit our website section on Backcountry Camping.-->
+
+<!--Q: Can I drive my RV along the Going-to-the-Sun Road?-->
+<!--A:-->
+<!--Vehicles, and vehicle combinations, longer than 21 feet (including bumpers) or wider than 8 feet (including mirrors) are prohibited between Avalanche Campground and the Sun Point parking area. You may however, drive to Avalanche if traveling east, and to Sun Point, if traveling west. Vehicles over 10 feet in height may have difficulty driving west from Logan Pass due to rock overhangs. Stock trucks and trailers may access Packers Roost and Siyeh Bend.-->
