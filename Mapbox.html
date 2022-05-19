@@ -17,6 +17,7 @@
 <body>
 
 <div id='map' class="mx-auto mt-20px"></div>
+<link rel="stylesheet" href="js/jquery-3.6.0.js">
 
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoicmFmYW1hcGJveDEzNSIsImEiOiJjbDNkNjE5dTcwMGlpM2pxa3Z1a296aDUwIn0.TWzKXTAoZ4h21W6zCBHXJA';
@@ -26,7 +27,7 @@
         center: [-75.2018, 39.9385], // starting position [lng, lat]
         zoom: 5 // starting zoom
     });
-    map.setZoom(18);
+    map.setZoom(10);
     // map.setCenter(-97.04, 30);
     let codeupMarker = new mapboxgl.Marker()
         .setLngLat([-98.48962, 29.42692])
