@@ -1,3 +1,5 @@
+// <script src="js/jquery-3.6.0.js"></script>
+
 /*!
  * jQuery JavaScript Library v3.6.0
  * https://jquery.com/

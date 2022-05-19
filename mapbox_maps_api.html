@@ -17,12 +17,14 @@
 
         div {
             align-content: center;
-            Can
         }
     </style>
 </head>
 <body>
 <div id='map' class="mx-auto mt-20px"></div>
+
+
+
 <form class="mx-auto w-25 mt-2">
     <label for="zoom">Set Zoom: </label>
     <input class="my-2" type="text" name="zoom" id="zoom">
@@ -43,6 +45,7 @@
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script>
     mapboxgl.accessToken = MAPBOX_API_TOKEN;
+
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
@@ -50,12 +53,11 @@
         zoom: 15 // starting zoom
     });
     map.setZoom(15);
-    // map.setCenter(-97.04, 30);
-    let homeMarker = new mapboxgl.Marker()
-        .setLngLat([-75.20165, 39.938525])
+    let favRestaurant = new mapboxgl.Marker()
+        .setLngLat([-74.940300, 40.091680])
         .addTo(map);
-    let codeupMarker = new mapboxgl.Marker()
-        .setLngLat([-98.48962, 29.42692])
+    let favRestaurant1 = new mapboxgl.Marker()
+        .setLngLat([-98.488090, 29.424630])
         .addTo(map);
     let codeupPopup = new mapboxgl.Popup().setHTML('<p CLASS = "MT-2">Codeup</p>');
     codeupMarker.setPopup(codeupPopup);
@@ -77,7 +79,7 @@
                 .addTo(map);
         })
 
-    //     let address = $("#setMarker").val();
+        //     let address = $("#setMarker").val();
     })
 </script>
 </body>
