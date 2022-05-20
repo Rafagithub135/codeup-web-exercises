@@ -2,14 +2,14 @@
 //
 // Write a function, returnFirstAndLast, that takes in an array of values and returns an array of just the first and last elements. Assume the input array contains at least two elements. The function should not mutate the input array.
 
-function returnFirstAndLast(input) {
-    return input[0], input.length -1;
-}
-// Examples
-//
-returnFirstAndLast([1, 2, 3, 4]) // returns [1, 4]
-returnFirstAndLast(['hello', 'bob', 7, null, 'world']) // returns ['hello', 'world']
-returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
+// function returnFirstAndLast(input) {
+//     return input[0], input.length -1;
+// }
+// // Examples
+// //
+// returnFirstAndLast([1, 2, 3, 4]) // returns [1, 4]
+// returnFirstAndLast(['hello', 'bob', 7, null, 'world']) // returns ['hello', 'world']
+// returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 //
 //
 // Write a function, returnEveryOtherElement, that takes in an array of inputs and returns an array of every other input, starting with the first. Assume the array will contain at least three elements. The function should not mutate the input array.-->
@@ -114,11 +114,11 @@ returnFirstAndLast(['hello', 'world']) // returns ['hello', 'world']
 
 // Write a function called convertToObject that takes in a string that is the name of a class, and a number that is the number of students, and returns an object with the properties 'class' and 'students'.
 
-function convertToObject(str, num) {
-    return {class: str, number: num};
-}
-console.log('class', 22)
-console.log('class', 35)
+// function convertToObject(str, num) {
+//     return {class: str, number: num};
+// }
+// console.log('class', 22)
+// console.log('class', 35)
 
 // Write a function that takes a neighborhood object and determines if it is desirable.  A neighborhood is desirable if the  median home price is less than 300000, crime rates are low, and teh total rating of schools is at least 24.
 
@@ -168,4 +168,27 @@ console.log('class', 35)
 //     }
 //     return neighborhoodObject.medianHomePrice < 300000 && neighborhoodObject.crimeRate === "low" && totalRating >= 24;
 // }
+
+//Define a function named `isDivisible` that takes in two numeric inputs: a value and divisor. If the numeric value can be evenly divided by the divisor, then return true. Otherwise, return false.
+
+// function isDivisible(input1, input2) {
+//     // your solution goes inside this function - you can change the names of the parameters input1, input2 to use in this function if you want
+//     if (input1 === null || input2 === null) {
+//         return false;
+//     } else if (input1 % input2 === 0) {
+//         return true;
+//     }
+//     return false;
+// }
+
+// tests for isEvenlyDivisible
+
+// console.log('isDivisible(75, 5) should be true', isDivisible(75, 5));
+// console.log('isDivisible(25, 25) should be true', isDivisible(25, 25));
+// console.log('isDivisible(\'fifty\', 2) should be false', isDivisible('fifty', 2));
+// console.log('isDivisible( ) should be false', isDivisible());
+// console.log('isDivisible(50, 2) should be true', isDivisible(50, 2));
+// console.log('isDivisible(50, 3) should be false', isDivisible(50, 3));
+// console.log('isDivisible(null, 2) should be false', isDivisible(null, 2));
+// console.log('isDivisible(50, null) should be false', isDivisible(50, null))
 
