@@ -46,7 +46,7 @@ if (studentEnrolled){
 let premiumMember = confirm("Are you a Premium Member? Click 'OK' for yes or 'Cancel' for no.")
 let offerValid = confirm("Is the offer still valid? Click 'OK' for yes or 'Cancel' for no.")
 let quantityQualifies = prompt("How many items are you buying?")
-let productDiscountIsApplied = offerValid &&(premiumMember || quantityQualifies > 2)
+let productDiscountIsApplied = offerValid && (premiumMember || quantityQualifies > 2)
 if (productDiscountIsApplied){
     alert('Congratulations!!! You qualify for the discount.');
 } else {
