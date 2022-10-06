@@ -1,5 +1,5 @@
 "use strict";
-// (function() {
+ (function() {
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -9,10 +9,10 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-//function sayHello(str) {
-//    return "Hello " + str + "!";
-//}
-//    console.log(sayHello(str, "Ralph"));
+function sayHello(str) {
+    return "Hello " + str + "!";
+}
+    console.log(sayHello(str, "Ralph"));
 
 /**
  * TODO:
@@ -22,9 +22,9 @@
  * console.log 'helloMessage' to check your work
  */
 
-//var helloMessage = sayHello();
+var helloMessage = sayHello();
 
-//    console.log(helloMessage);
+    console.log(helloMessage);
 
 /**
  * TODO:
@@ -33,13 +33,13 @@
  * console.
  */
 
-//var myName = 'Ralph'
-//    console.log(sayHello(myName));
+var myName = 'Ralph'
+    console.log(sayHello(myName));
 
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
+ Don't modify the following line, it generates a random number between 1 and 3
+ and stores it in a variable named random
 
-//var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -59,11 +59,11 @@
  * number)
  */
 
-//function isTwo(num){
-//    return num === 2;
-//}
+function isTwo(num){
+    return num === 2;
+}
 
-//    console.log(isTwo(random));
+    console.log(isTwo(random));
 
 /**
  * TODO:
@@ -77,11 +77,11 @@
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-//function calculateTip(tipPercentage, totalBill){
-//    return tipPercentage * totalBill;
-//}
+function calculateTip(tipPercentage, totalBill){
+   return tipPercentage * totalBill;
+}
 
-//console.log(calculateTip(.2, 20));
+console.log(calculateTip(.2, 20));
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -89,10 +89,10 @@
  * then display the dollar amount they should tip
  */
 
-//var bill = parseFloat(prompt('How much is the total bill?'));
-//var tipPercentage = parseFloat(prompt('How much would you like to tip?'));
+var bill = parseFloat(prompt('How much is the total bill?'));
+var tipPercentage = parseFloat(prompt('How much would you like to tip?'));
 
-//alert(calculateTip(tipPercentage, totalBill));
+alert(calculateTip(tipPercentage, totalBill));
 
 /**
  * TODO:
@@ -109,10 +109,10 @@
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-//function applyDiscount(price, discountPercent){
-//    return price - (price * discountPercent);
-//}
-//    console.log(price100, applyDiscount(.2));
+function applyDiscount(price, discountPercent){
+   return price - (price * discountPercent);
+}
+   console.log(price100, applyDiscount(.2));
 
 /* ########################################################################## */
 
@@ -136,65 +136,65 @@
  * console.logging the function's return value
  */
 
-// function analyzeColor(input) {
+function analyzeColor(input) {
 
-// if (input === 'red' || input === 'Red'){
-//     return 'Hot embers can be red.';
-// }   else if (input === 'blue' || input === 'Blue'){
-//     return 'Oceans looked at from a distance appear blue.';
-// }   else if (input === 'yellow' || input === 'Yellow'){
-//     return 'The sun is bright yellow.';
-// }   else if (input === 'orange' || input === 'Orange'){
-//     return 'Amber gemstones are actually orange.';
-// }   else if (input === 'white' || input === 'White'){
-//     return 'Snow is white.';
-// }   else;
-//     return 'You have chosen a color that is not available.  Please choose again.';
-// }
-//     console.log(analyzeColor('grey'));
+if (input === 'red' || input === 'Red'){
+    return 'Hot embers can be red.';
+}   else if (input === 'blue' || input === 'Blue'){
+    return 'Oceans looked at from a distance appear blue.';
+}   else if (input === 'yellow' || input === 'Yellow'){
+    return 'The sun is bright yellow.';
+}   else if (input === 'orange' || input === 'Orange'){
+    return 'Amber gemstones are actually orange.';
+}   else if (input === 'white' || input === 'White'){
+    return 'Snow is white.';
+}   else;
+    return 'You have chosen a color that is not available.  Please choose again.';
+}
+    console.log(analyzeColor('grey'));
 
-// Don't change the next two lines!
-// These lines create two variables for you:
-// - `colors`: a list of the colors of the rainbow
-// - `randomColor`: contains a single random color value from the list (this
-//                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+Don't change the next two lines!
+These lines create two variables for you:
+- `colors`: a list of the colors of the rainbow
+- `randomColor`: contains a single random color value from the list (this
+                 will contain a different color every time the page loads)
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
-// console.log(analyzeColor(randomColor));
+console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
-// var analyzeColor = prompt('What color do you choose?');
-//
-// switch (analyzeColor){
-//     case 'red':
-//         alert('Hot embers can be red');
-//         break;
-//     case 'blue':
-//         alert('Oceans looked at from a distance appear blue.');
-//         break;
-//     case 'yellow':
-//         alert('The sun is bright yellow.');
-//         break;
-//     case 'orange':
-//         alert('Amber gemstones are actually orange.');
-//         break;
-//     case 'white':
-//         alert('Snow is white.');
-//         break;
-//     default:
-//         return + analyzeColor + ' is not available.  Please choose another color.';
-//         break;
-// }
+var analyzeColor = prompt('What color do you choose?');
+
+switch (analyzeColor){
+    case 'red':
+        alert('Hot embers can be red');
+        break;
+    case 'blue':
+        alert('Oceans looked at from a distance appear blue.');
+        break;
+    case 'yellow':
+        alert('The sun is bright yellow.');
+        break;
+    case 'orange':
+        alert('Amber gemstones are actually orange.');
+        break;
+    case 'white':
+        alert('Snow is white.');
+        break;
+    default:
+        return + analyzeColor + ' is not available.  Please choose another color.';
+        break;
+}
 
 /**
  * TODO:
@@ -203,11 +203,11 @@
  * function to show it to the user.
  */
 
-// var newColor = prompt('What color would you like to discuss?');
-//
-// function analyzeColor(newColor){
-//     alert('You chose ' + newColor + '.');
-// }
+var newColor = prompt('What color would you like to discuss?');
+
+function analyzeColor(newColor){
+    alert('You chose ' + newColor + '.');
+}
 
 /* ########################################################################## */
 
@@ -257,7 +257,7 @@ function calculateTotal(num) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
+Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
 
@@ -280,4 +280,4 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 
-// })();
+})();
