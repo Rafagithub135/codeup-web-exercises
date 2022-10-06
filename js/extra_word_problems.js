@@ -36,4 +36,3 @@ var gamesBirthday = 3;
 function totalGames() {
     return (gamesAtFirst + gamesBirthday);
 }
-

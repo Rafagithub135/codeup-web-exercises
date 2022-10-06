@@ -31,8 +31,10 @@ alert("You worked a total of " + (weeklyHoursWorkedGoogle +
 weeklyHoursWorkedAmazon + weeklyHoursWorkedFacebook) + " hours and your total pay is "
 + (paycheckGoogle + paycheckAmazon + paycheckFacebook).toFixed(2));
 
-var classInterestedNotFull = confirm("Does the class you are interested in have available room?")
-var classInterestedNoConflict = confirm("The class you are interested in has no conflict with your current schedule?")
+var classInterestedNotFull = confirm("Does the class you are interested in have available room? Click 'OK' for yes or 'Cancel' for no.")
+console.log(confirm);
+var classInterestedNoConflict = confirm("The class you are interested in has no conflict with your current schedule? Click 'OK' for yes or 'Cancel' for no.")
+console.log(confirm);
 var studentEnrolled = classInterestedNotFull && classInterestedNoConflict
 
 if (studentEnrolled){
@@ -41,8 +43,8 @@ if (studentEnrolled){
     alert('Sorry, you are unable to enroll in this class at this time.');
 }
 
-var premiumMember = confirm("Are you a Premium Member?")
-var offerValid = confirm("Is the offer still valid?")
+var premiumMember = confirm("Are you a Premium Member? Click 'OK' for yes or 'Cancel' for no.")
+var offerValid = confirm("Is the offer still valid? Click 'OK' for yes or 'Cancel' for no.")
 var quantityQualifies = prompt("How many items are you buying?")
 var productDiscountIsApplied = offerValid &&(premiumMember || quantityQualifies > 2)
 if (productDiscountIsApplied){
