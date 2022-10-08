@@ -1,8 +1,0 @@
-var mermaid = 3
-var brother = 5
-var hercules = 1
-var d = 3
-function money(d){
-    return ((d * mermaid) + (d * brother) + (d * hercules))
-}
-

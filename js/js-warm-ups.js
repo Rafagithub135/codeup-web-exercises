@@ -192,3 +192,62 @@
 // console.log('isDivisible(null, 2) should be false', isDivisible(null, 2));
 // console.log('isDivisible(50, null) should be false', isDivisible(50, null))
 
+// TODO: Write an arrow function named "highFive" which accepts a string and alerts the user's input, asking for a high five.
+// Example: highFive("Go") returns "Go, high five!"
+
+// const highFive = str => alert(`${str},High five!`);
+
+// TODO/CLASS: Add disney results to page!
+const disneyAPI = 'https://api.disneyapi.dev/characters';
+//DOCS: "https://disneyapi.dev/docs";
+
+const arrayOfDisney = []
+$("#search").keyup((e) => {
+    console.log("e.target.value:", e.target.value);
+    if(e.key === "Enter") fetch(disneyAPI + e.target.value)
+        .then(res => res.json())
+        .then(res => createDisney(res))
+        .catch(res => alert("No results!"));
+})
+
+Promise.all(arrayOfDisney).then(arrayOfResponses => {
+    console.log("arrayOfResponses :", arrayOfResponses);
+
+    arrayOfResponses.forEach((name) => {
+        name.json().then((res) => createDisney(res));
+    })
+
+});
+
+// ASK:
+// Can you call this api of disney characters and map each of these characters to
+// an unordered list. Attach that list to the page on the #disney id
+// Add the results to the disney div.
+// Include at least the character name in the list item.
+
+
+
+// TODO/BONUS: Add previous and next page functionality to disney results
+
+// TODO/BONUS: Take Bobs Burgers api and return what the most watched episode was.
+const bobsBurgersApi = "https://bobsburgers-api.herokuapp.com/episodes"
+
+'1' + 2
+typeof '1' + 2
+6 % 4
+'3 + 4 is ' + 3 + 4
+'3 + 4 is ' + (3 + 4)
+0 < 0
+'false' == false
+true == 'true'
+5 >= -5
+!false || false
+true || "42"
+!true && !false
+6 % 5
+5 < 4 && 1 === 1
+typeof 'codeup' === 'string'
+'codeup' === 'codeup' && 'codeup' === 'Codeup'
+4 >= 0 && 1 !== '1'
+6 % 3 === 0
+5 % 2 !== 0
