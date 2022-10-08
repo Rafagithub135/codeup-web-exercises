@@ -191,7 +191,7 @@ console.log(someNumber);
 if (isNaN(parseFloat(someNumber))) {
     alert('That is the incorrect type of data! That is a ' + typeof someNumber);
 } else {
-    alert(parseFloat(someNumber) + 100);
+    alert('Your number plus 100 is ' + (Number(someNumber) + 100));
     alert(someNumber >= 0 ? 'Your number is positive.' : 'Your number is negative');
     alert(someNumber % 2 === 0 ? 'Your number is even' : 'Your number is odd.');
 }
