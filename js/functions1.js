@@ -9,8 +9,8 @@
      * > sayHello("codeup") // returns "Hello, codeup!"
      */
 
-    function sayHello(str) {
-        return "Hello " + str + "!";
+    function sayHello(name) {
+        return "Hello, " + name + "!";
     }
 
     console.log(sayHello("Ralph"));
@@ -84,6 +84,7 @@
     }
 
     console.log(calculateTip(.2, 20));
+
     /**
      * TODO:
      * Use prompt and alert in combination with your calculateTip function to
@@ -298,6 +299,6 @@
     if (luckyNum >= 0) {
         alert('Your number is positive.');
     } else
-        alert('Your number is odd');
+        alert('Your number is negative.');
 
 })();

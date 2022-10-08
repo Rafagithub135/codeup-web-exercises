@@ -48,3 +48,9 @@ if (studentEnrolled){
 } else {
     alert('Sorry, you are unable to enroll in this class at this time.');
 }
+
+let posiblyFive;
+if (posiblyFive === 5) {
+    console.log("Number is five")
+}
+

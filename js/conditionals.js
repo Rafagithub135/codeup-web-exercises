@@ -1,5 +1,4 @@
-// (function() {
-// "use strict";
+"use strict";
 
 /* ########################################################################## */
 
@@ -22,64 +21,24 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-// var colorName = prompt('Enter a color:');
-//
-// function analyzeColor(colorName) {
-//     if (colorName === 'red') {
-//         alert('Most fire trucks are red.');
-//     } else if (colorName === 'blue') {
-//         alert('The ocean, looked at from a distance seems to be blue.');
-//     } else if (colorName === 'yellow') {
-//         alert('The sun is yellow.');
-//     } else if (colorName === 'white') {
-//         alert('Snow is white.');
-//     } else if (colorName === 'green') {
-//         alert('Green is the color of grass.');
-//     } else
-//         alert(colorName + ' is not a color available.  Please try another color.');
-// }
-// console.log(analyzeColor(colorName));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
-// //                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//                  will contain a different color every time the page loads)
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
-// console.log(randomColor);
-
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-
-// switch (colorName) {
-//     case 'red':
-//         alert('Most fire trucks are red.');
-//         break;
-//     case 'blue':
-//         alert('The ocean, looked at from a distance seems to be blue.');
-//         break;
-//     case 'yellow':
-//         alert('The sun is yellow.');
-//         break;
-//     case 'white':
-//         alert('Snow is white.');
-//         break;
-//     case 'green':
-//         alert('Green is the color of grass.');
-//         break;
-//     default:
-//         alert(colorName + ' is not a color available. Please try another color.');
-//         break;
-// }
 
 /**
  * TODO:
@@ -87,12 +46,6 @@
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
-// var colorName = prompt('Enter a color:');
-//
-//     function analyzeColor(colorName) {
-//         alert('You chose the color ' + colorName + '.');
-//     }
 
 /* ########################################################################## */
 
@@ -116,26 +69,6 @@
  * return value.
  */
 
-// var totalAmount = prompt('Enter your total amount: ');
-// var luckyNumber = Math.floor(Math.random() * 6);
-// // alert('Your lucky number is ' + luckyNumber);
-// var finalBill =
-//
-//     function calculateTotal(luckyNumber, totalAmount) {
-//         if (luckyNumber === 0) {
-//             return totalAmount;
-//         } else if (luckyNumber === 1) {
-//             return totalAmount - (totalAmount * .1);
-//         } else if (luckyNumber === 2) {
-//             return totalAmount - (totalAmount * .25);
-//         } else if (luckyNumber === 3) {
-//             return totalAmount - (totalAmount * .35);
-//         } else if (luckyNumber === 4) {
-//             return totalAmount - (totalAmount * .5);
-//         } else
-//             return 'Congratulations! Your bill is $0.00 today!!!'
-//     }
-
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -146,27 +79,7 @@
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
-// function calculateTotal(luckyNumber, totalAmount) {
-//     switch (luckyNumber) {
-//         case 0:
-//             alert('Your total bill today is ' + totalAmount + '.');
-//             break;
-//         case 1:
-//             alert('Your total bill today is ' + totalAmount - (totalAmount * .1) + '.');
-//             break;
-//         case 2:
-//             alert('Your total bill today is ' + totalAmount - (totalAmount * .25) + '.');
-//             break;
-//         case 3:
-//             alert('Your total bill today is ' + totalAmount - (totalAmount * .35) + '.');
-//             break;
-//         case 4:
-//             alert('Your total bill today is ' + totalAmount - (totalAmount * .5) + '.');
-//             break;
-//         default:
-//             alert('Your bill today is $0.00!!!');
-//     }
-// }
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -185,15 +98,3 @@
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-var someNumber = confirm('Would you like to enter a number?');
-someNumber = prompt("Enter a number: ");
-console.log(someNumber);
-if (isNaN(parseFloat(someNumber))) {
-    alert('That is the incorrect type of data! That is a ' + typeof someNumber);
-} else {
-    alert(parseFloat(someNumber) + 100);
-    alert(someNumber >= 0 ? 'Your number is positive.' : 'Your number is negative');
-    alert(someNumber % 2 === 0 ? 'Your number is even' : 'Your number is odd.');
-}
-
-// })();
