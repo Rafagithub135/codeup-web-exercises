@@ -22,6 +22,7 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
 // var colorName = prompt('Enter a color:');
 //
 // function analyzeColor(colorName) {
@@ -47,6 +48,7 @@
 // //                  will contain a different color every time the page loads)
 // var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 // var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
@@ -144,6 +146,7 @@
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
+
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 // function calculateTotal(luckyNumber, totalAmount) {
@@ -167,6 +170,7 @@
 //             alert('Your bill today is $0.00!!!');
 //     }
 // }
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -185,6 +189,7 @@
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
 var someNumber = confirm('Would you like to enter a number?');
 someNumber = prompt("Enter a number: ");
 console.log(someNumber);
