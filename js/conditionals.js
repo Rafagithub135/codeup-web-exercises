@@ -21,24 +21,24 @@
      * Test your function by passing various string literals to it and
      * console.logging the function's return value
      */
-    // let colorName = prompt("Enter a color:");
-    //
-    // function analyzeColor(colorName) {
-    //     if (colorName.toLowerCase() === 'red') {
-    //         alert('Most fire trucks are red');
-    //     } else if (colorName.toLowerCase() === 'blue') {
-    //         alert('The ocean, looked at from a distance seems to be blue.');
-    //     } else if (colorName.toLowerCase() === 'yellow') {
-    //         alert('The sun is yellow');
-    //     } else if (colorName.toLowerCase() === 'white') {
-    //         alert('Snow is white.');
-    //     } else if (colorName.toLowerCase() === 'green') {
-    //         alert('Green is the color of grass.');
-    //     } else
-    //         alert(colorName + ' is not a color available.  Please try another color.');
-    // }
+    let colorName = prompt("Enter a color:").toLowerCase();
 
-    // console.log(analyzeColor(colorName));
+    function analyzeColor(colorName) {
+        if (colorName === 'red') {
+            alert('Most fire trucks are red');
+        } else if (colorName === 'blue') {
+            alert('The ocean, looked at from a distance seems to be blue.');
+        } else if (colorName === 'yellow') {
+            alert('The sun is yellow');
+        } else if (colorName === 'white') {
+            alert('Snow is white.');
+        } else if (colorName === 'green') {
+            alert('Green is the color of grass.');
+        } else
+            alert(colorName + ' is not a color available.  Please try another color.');
+    }
+
+    console.log(analyzeColor(colorName));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -90,7 +90,7 @@
      * function to show it to the user.
      */
 
-    // let colorName = prompt('Enter a color: ');
+    // let colorName = prompt('Enter a color: ').toLowerCase();
     //
     // analyzeColor(colorName)
     //     alert('You chose the color ' + colorName + '.');
@@ -120,15 +120,15 @@
     // function calculateTotal(luckyNum, totalAmount) {
     //     if (luckyNum === 0) {
     //         return totalAmount;
-    //     }else if (luckyNum === 1) {
+    //     } else if (luckyNum === 1) {
     //         return totalAmount * .9;
-    //     }else if (luckyNum === 2) {
+    //     } else if (luckyNum === 2) {
     //         return totalAmount * .75;
-    //     }else if (luckyNum === 3) {
+    //     } else if (luckyNum === 3) {
     //         return totalAmount * .65;
-    //     }else if (luckyNum === 4) {
+    //     } else if (luckyNum === 4) {
     //         return totalAmount * .5;
-    //     }else
+    //     } else
     //         return 'Congratulations, your bill is $0.00 today!!!'
     // }
     //

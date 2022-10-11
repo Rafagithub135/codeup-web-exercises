@@ -54,9 +54,48 @@
 //     console.log("Number is five")
 // }
 
-let whatsMyNumber = prompt('Enter a number: ');
-if (whatsMyNumber >= 0) {
-    alert('Your number is positive!');
-} else if (whatsMyNumber < 0) {
-    alert('Your number is negative!');
+// let whatsMyNumber = prompt('Enter a number: ');
+// if (whatsMyNumber >= 0) {
+//     alert('Your number is positive!');
+// } else if (whatsMyNumber < 0) {
+//     alert('Your number is negative!');
+// }
+
+// The following is from w3 schools.
+
+let carName = "Volvo";
+let first = 50;
+let x = 5;
+let y = 10;
+document.getElementById("demo").innerHTML = x + y;
+let z = x + y;
+alert(z);
+let firstName = "John", lastName = "Doe", age = 35;
+alert(10 * 5);
+alert(10 / 2);
+alert(15 % 9);
+x += y;
+x *= y;
+let length = 16 // This is a number.
+let lastName = "Johnson"  // This is a string.
+const x = {
+    firstName: "John",
+    lastName: "Doe"
+}               // This is an object.
+function myFunction() {
+    alert("Hello World!");
 }
+myFunction();
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello";
+}
+const person = {
+    firstName: "John",
+    lastName: "Doe"
+};
+alert(person.firstName);
+const friend = {
+    firstName: "John",
+    age: 50
+};
+alert(friend.firstName +)

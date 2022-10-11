@@ -23,7 +23,7 @@
  * console.logging the function's return value
  */
 
-// var colorName = prompt('Enter a color:');
+// let colorName = prompt('Enter a color:').toLowerCase();
 //
 // function analyzeColor(colorName) {
 //     if (colorName === 'red') {
