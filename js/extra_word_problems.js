@@ -98,4 +98,4 @@ const friend = {
     firstName: "John",
     age: 50
 };
-alert(friend.firstName +)
+alert(friend.firstName + " is " + friend.age + " years old");
