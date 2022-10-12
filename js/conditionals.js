@@ -192,7 +192,11 @@
      * HINT: The way we prompt for a value could be improved
      */
 
-    // let someNumber = confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');
+    if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');) {
+
+    }
+
+    // let someNumber =
     // if (someNumber === true) {
     //     prompt('Enter a number: ');
     //     console.log(someNumber);
