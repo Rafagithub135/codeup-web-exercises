@@ -24,7 +24,7 @@
 
 
     // function analyzeColor(inputColor) {
-    //     // let colorName = prompt("Enter a color:").toLowerCase();
+    //     let colorName = prompt("Enter a color:").toLowerCase();
     //     if (inputColor === 'red') {
     //         return 'Most fire trucks are red';
     //     } else if (inputColor === 'blue') {
@@ -34,7 +34,7 @@
     //     } else if (inputColor === 'white') {
     //         return 'Snow is white.';
     //     } else if (inputColor === 'green') {
-    //         return'Green is the color of grass.';
+    //         return 'Green is the color of grass.';
     //     } else
     //         alert(inputColor + ' is not a color available.  Please try another color.');
     // }
@@ -71,23 +71,17 @@
 
     // switch (colorName) {
     //     case 'red':
-    //         alert('Most fire trucks are red.');
-    //         break;
+    //         return 'Most fire trucks are red';
     //     case 'blue':
-    //         alert('The ocean, when looked at from a far distance seems to be blue.');
-    //         break;
+    //         return 'The ocean, looked at from a distance seems to be blue.';
     //     case 'yellow':
-    //         alert('The sun is yellow.');
-    //         break;
+    //         return 'The sun is yellow';
     //     case 'white':
-    //         alert('Snow is white.');
-    //         break;
+    //         return 'Snow is white.';
     //     case 'green':
-    //         alert('Green is the color of grass.');
-    //         break;
+    //         return 'Green is the color of grass.';
     //     default:
     //         alert(colorName + ' is not a color available.  Please try another color.');
-    //         break;
     // }
 
     /**
