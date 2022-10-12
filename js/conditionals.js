@@ -21,24 +21,31 @@
      * Test your function by passing various string literals to it and
      * console.logging the function's return value
      */
-    let colorName = prompt("Enter a color:").toLowerCase();
 
-    function analyzeColor(colorName) {
+
+    function analyzeColor(inputColor) {
+        let colorName = prompt("Enter a color:").toLowerCase();
         if (colorName === 'red') {
-            alert('Most fire trucks are red');
+            return 'Most fire trucks are red';
         } else if (colorName === 'blue') {
-            alert('The ocean, looked at from a distance seems to be blue.');
+            return 'The ocean, looked at from a distance seems to be blue.';
         } else if (colorName === 'yellow') {
-            alert('The sun is yellow');
+            return 'The sun is yellow';
         } else if (colorName === 'white') {
-            alert('Snow is white.');
+            return 'Snow is white.';
         } else if (colorName === 'green') {
-            alert('Green is the color of grass.');
+            return'Green is the color of grass.';
         } else
             alert(colorName + ' is not a color available.  Please try another color.');
     }
 
-    console.log(analyzeColor(colorName));
+    console.log(analyzeColor('red'));
+    console.log(analyzeColor('blue'));
+    console.log(analyzeColor('Yellow'));
+    console.log(analyzeColor('white'));
+    console.log(analyzeColor('green'));
+    console.log(analyzeColor('gren'));
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -131,7 +138,7 @@
     //     } else
     //         return 'Congratulations, your bill is $0.00 today!!!'
     // }
-    //
+
     // console.log(calculateTotal(0, 100));
     // console.log(calculateTotal(1,100));
     // console.log(calculateTotal(2,100));
@@ -191,16 +198,17 @@
      * HINT: The way we prompt for a value could be improved
      */
 
-    confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');
-    let someNumber = prompt('Enter a number: ');
-    console.log(someNumber);
-    if (isNaN(parseFloat(someNumber))) {
-        alert('That is the incorrect type of data! That is a ' + typeof someNumber);
-    } else {
-        alert('Your number plus 100 is ' + (parseFloat(someNumber) + 100));
-        alert(someNumber >= 0 ? "Your number is positive." : "Your number is negative.");
-        alert(someNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
-    }
+    // let someNumber = confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');
+    // if (someNumber === true) {
+    //     prompt('Enter a number: ');
+    //     console.log(someNumber);
+    //     (parseFloat(someNumber))
+    //         alert('Your number plus 100 is ' + (parseFloat(someNumber) + 100));
+    //         alert(someNumber >= 0 ? "Your number is positive." : "Your number is negative.");
+    //         alert(someNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
+    //     } else {
+    //         alert('That is the incorrect type of data! That is a ' + typeof someNumber);
+    //     }
 
 
 })();
