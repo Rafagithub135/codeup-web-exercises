@@ -23,28 +23,28 @@
      */
 
 
-    function analyzeColor(inputColor) {
-        let colorName = prompt("Enter a color:").toLowerCase();
-        if (colorName === 'red') {
-            return 'Most fire trucks are red';
-        } else if (colorName === 'blue') {
-            return 'The ocean, looked at from a distance seems to be blue.';
-        } else if (colorName === 'yellow') {
-            return 'The sun is yellow';
-        } else if (colorName === 'white') {
-            return 'Snow is white.';
-        } else if (colorName === 'green') {
-            return'Green is the color of grass.';
-        } else
-            alert(colorName + ' is not a color available.  Please try another color.');
-    }
+    // function analyzeColor(inputColor) {
+    //     // let colorName = prompt("Enter a color:").toLowerCase();
+    //     if (inputColor === 'red') {
+    //         return 'Most fire trucks are red';
+    //     } else if (inputColor === 'blue') {
+    //         return 'The ocean, looked at from a distance seems to be blue.';
+    //     } else if (inputColor === 'yellow') {
+    //         return 'The sun is yellow';
+    //     } else if (inputColor === 'white') {
+    //         return 'Snow is white.';
+    //     } else if (inputColor === 'green') {
+    //         return'Green is the color of grass.';
+    //     } else
+    //         alert(inputColor + ' is not a color available.  Please try another color.');
+    // }
 
-    console.log(analyzeColor('red'));
-    console.log(analyzeColor('blue'));
-    console.log(analyzeColor('Yellow'));
-    console.log(analyzeColor('white'));
-    console.log(analyzeColor('green'));
-    console.log(analyzeColor('gren'));
+    // console.log(analyzeColor('red'));
+    // console.log(analyzeColor('blue'));
+    // console.log(analyzeColor('Yellow'));
+    // console.log(analyzeColor('white'));
+    // console.log(analyzeColor('green'));
+    // console.log(analyzeColor('gren'));
 
 
 // Don't change the next two lines!
