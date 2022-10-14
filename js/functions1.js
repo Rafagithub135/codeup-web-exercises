@@ -9,13 +9,9 @@
      * > sayHello("codeup") // returns "Hello, codeup!"
      */
 
-<<<<<<< Updated upstream
+
     function sayHello(name) {
         return "Hello, " + name + "!";
-=======
-    function sayHello(str) {
-        return "Hello " + str + "!";
->>>>>>> Stashed changes
     }
 
     console.log(sayHello("Ralph"));
@@ -89,10 +85,7 @@
     }
 
     console.log(calculateTip(.2, 20));
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     /**
      * TODO:
      * Use prompt and alert in combination with your calculateTip function to
@@ -100,10 +93,10 @@
      * then display the dollar amount they should tip
      */
 
-    let totalBill = parseFloat(prompt('How much is the total bill?'));
-    let tipPercentage = parseFloat(prompt('How much would you like to tip?'));
+    // let totalBill = parseFloat(prompt('How much is the total bill?'));
+    // let tipPercentage = parseFloat(prompt('How much would you like to tip?'));
 
-    alert(calculateTip(tipPercentage, totalBill).toFixed(2));
+    // alert(calculateTip(tipPercentage, totalBill).toFixed(2));
 
     /**
      * TODO:
@@ -120,11 +113,11 @@
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
 
-    function applyDiscount(price, discountPercent) {
-        return price - (price * discountPercent);
-    }
+    // function applyDiscount(price, discountPercent) {
+    //     return price - (price * discountPercent);
+    // }
 
-    console.log(applyDiscount(100, .15));
+    // console.log(applyDiscount(100, .15));
 
     /* ########################################################################## */
 
@@ -307,10 +300,7 @@
     if (luckyNum >= 0) {
         alert('Your number is positive.');
     } else
-<<<<<<< Updated upstream
         alert('Your number is negative.');
-=======
         alert('Your number is odd');
->>>>>>> Stashed changes
 
 })();
