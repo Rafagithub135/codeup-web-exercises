@@ -33,10 +33,19 @@
 
     // 4. Create a for loop that uses console.log to create the output shown.
 
-    let pyramidNumber = 1;
-    for (let i = 1; i < 10; i++) {
-    }
-    console.log(pyramidNumber);
+    // for (let i = 1; i < 10; i++) {
+    //     let stack = '';
+    //     for (let j = 1; j <= i; j++) {
+    //         stack += i;
+    //     }
+    //     console.log(stack);
+    // }
+
+
+    // let pyramidNumber = 1;
+    // for (let i = 1; i < 10; i++) {
+    // }
+    // console.log(pyramidNumber);
 
     // 5. Create a for loop that uses console.log to create the output shown.
 
