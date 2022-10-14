@@ -1,9 +1,6 @@
 "use strict";
-<<<<<<< Updated upstream
 (function() {
-=======
 
->>>>>>> Stashed changes
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -13,15 +10,12 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-<<<<<<< Updated upstream
 function sayHello(name) {
     return 'Hello, ' + name + '.';
 }
 
 console.log(sayHello("Ralph"));
 
-=======
->>>>>>> Stashed changes
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -30,13 +24,10 @@ console.log(sayHello("Ralph"));
  * console.log 'helloMessage' to check your work
  */
 
-<<<<<<< Updated upstream
 let helloMessage = sayHello("Ralph");
 
 console.log(helloMessage);
 
-=======
->>>>>>> Stashed changes
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
@@ -44,19 +35,14 @@ console.log(helloMessage);
  * console.
  */
 
-<<<<<<< Updated upstream
 let myName = 'Ralph';
 
 console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
+
 let random = Math.floor((Math.random() * 3) + 1);
-=======
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
->>>>>>> Stashed changes
 
 /**
  * TODO:
@@ -76,15 +62,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-<<<<<<< Updated upstream
 function isTwo(num) {
     return num === 2;
 }
 
 console.log(isTwo(random), random);
 
-=======
->>>>>>> Stashed changes
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -97,15 +80,12 @@ console.log(isTwo(random), random);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-<<<<<<< Updated upstream
 function calculateTip(tipPercentage, totalBill) {
     return (tipPercentage * totalBill).toFixed(2);
 }
 
 console.log(calculateTip(.20, 100));
 
-=======
->>>>>>> Stashed changes
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -113,7 +93,6 @@ console.log(calculateTip(.20, 100));
  * then display the dollar amount they should tip
  */
 
-<<<<<<< Updated upstream
 let totalBill = parseFloat(prompt('What is the total of the bill?'));
 let tipPercentage = parseFloat(prompt('What is the percentage you would like to tip?'))/100;
 
@@ -147,8 +126,8 @@ function applyDiscount(price, discount) {
 
 console.log(applyDiscount(100, .15));
 
-})()
-=======
+
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -163,4 +142,5 @@ console.log(applyDiscount(100, .15));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
->>>>>>> Stashed changes
+
+})()
