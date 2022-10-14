@@ -9,6 +9,7 @@
      * > sayHello("codeup") // returns "Hello, codeup!"
      */
 
+
     function sayHello(name) {
         return "Hello, " + name + "!";
     }
@@ -92,10 +93,10 @@
      * then display the dollar amount they should tip
      */
 
-    let totalBill = parseFloat(prompt('How much is the total bill?'));
-    let tipPercentage = parseFloat(prompt('How much would you like to tip?'));
+    // let totalBill = parseFloat(prompt('How much is the total bill?'));
+    // let tipPercentage = parseFloat(prompt('How much would you like to tip?'));
 
-    alert(calculateTip(tipPercentage, totalBill).toFixed(2));
+    // alert(calculateTip(tipPercentage, totalBill).toFixed(2));
 
     /**
      * TODO:
@@ -112,11 +113,11 @@
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
 
-    function applyDiscount(price, discountPercent) {
-        return price - (price * discountPercent);
-    }
+    // function applyDiscount(price, discountPercent) {
+    //     return price - (price * discountPercent);
+    // }
 
-    console.log(applyDiscount(100, .15));
+    // console.log(applyDiscount(100, .15));
 
     /* ########################################################################## */
 
@@ -300,5 +301,6 @@
         alert('Your number is positive.');
     } else
         alert('Your number is negative.');
+        alert('Your number is odd');
 
 })();
