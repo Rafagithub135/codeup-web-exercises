@@ -89,6 +89,7 @@ myFunction();
 function myFunction() {
     document.getElementById("demo").innerHTML = "Hello";
 }
+<<<<<<< Updated upstream
 const person = {
     firstName: "John",
     lastName: "Doe"
@@ -99,3 +100,17 @@ const friend = {
     age: 50
 };
 alert(friend.firstName + " is " + friend.age + " years old");
+=======
+
+let classInterestedNotFull = confirm("Does the class you are interested in have available room? Click 'OK' for yes or 'Cancel' for no.")
+console.log(confirm);
+let classInterestedNoConflict = confirm("The class you are interested in has no conflict with your current schedule? Click 'OK' for yes or 'Cancel' for no.")
+console.log(confirm);
+let studentEnrolled = classInterestedNotFull && classInterestedNoConflict
+
+if (studentEnrolled){
+    alert('Congratulations!!! You are enrolled in the class.');
+} else {
+    alert('Sorry, you are unable to enroll in this class at this time.');
+}
+>>>>>>> Stashed changes
