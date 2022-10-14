@@ -23,28 +23,28 @@
      */
 
 
-    // function analyzeColor(inputColor) {
-    //     let colorName = prompt("Enter a color:").toLowerCase();
-    //     if (inputColor === 'red') {
-    //         return 'Most fire trucks are red';
-    //     } else if (inputColor === 'blue') {
-    //         return 'The ocean, looked at from a distance seems to be blue.';
-    //     } else if (inputColor === 'yellow') {
-    //         return 'The sun is yellow';
-    //     } else if (inputColor === 'white') {
-    //         return 'Snow is white.';
-    //     } else if (inputColor === 'green') {
-    //         return 'Green is the color of grass.';
-    //     } else
-    //         alert(inputColor + ' is not a color available.  Please try another color.');
-    // }
+    function analyzeColor(inputColor) {
+        let colorName = prompt("Enter a color:").toLowerCase();
+        if (inputColor === 'red') {
+            return 'Most fire trucks are red';
+        } else if (inputColor === 'blue') {
+            return 'The ocean, looked at from a distance seems to be blue.';
+        } else if (inputColor === 'yellow') {
+            return 'The sun is yellow';
+        } else if (inputColor === 'white') {
+            return 'Snow is white.';
+        } else if (inputColor === 'green') {
+            return 'Green is the color of grass.';
+        } else
+            alert(inputColor + ' is not a color available.  Please try another color.');
+    }
 
-    // console.log(analyzeColor('red'));
-    // console.log(analyzeColor('blue'));
-    // console.log(analyzeColor('Yellow'));
-    // console.log(analyzeColor('white'));
-    // console.log(analyzeColor('green'));
-    // console.log(analyzeColor('gren'));
+    console.log(analyzeColor('red'));
+    console.log(analyzeColor('blue'));
+    console.log(analyzeColor('Yellow'));
+    console.log(analyzeColor('white'));
+    console.log(analyzeColor('green'));
+    console.log(analyzeColor('gren'));
 
 
 // Don't change the next two lines!
@@ -192,9 +192,9 @@
      * HINT: The way we prompt for a value could be improved
      */
 
-    if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');) {
+    // if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');) {
 
-    }
+    // }
 
     // let someNumber =
     // if (someNumber === true) {
