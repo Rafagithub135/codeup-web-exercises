@@ -2,15 +2,15 @@
 (function () {
 
 
-    // let num = 2;
-    // let count = 0;
-    // while (count < 15) {
-    //     console.log(num);
-    //     num = num * 2;
-    //     count = count + 1;
-    // }
+    let num = 2;
+    let count = 0;
+    while (count < 15) {
+        console.log(num);
+        num = num * 2;
+        count = count + 1;
+    }
 
-    // console.log(num);
+    console.log(num);
 
     let allConesToSell = Math.floor(Math.random() * 50) + 50;
     console.log(allConesToSell);
