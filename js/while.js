@@ -1,6 +1,7 @@
+"use strict";
 (function() {
-    var num = 2;
-    var count = 0;
+    let num = 2;
+    let count = 0;
     while(count < 16) {
         console.log(num);
         num = num * 2;
