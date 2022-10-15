@@ -11,8 +11,8 @@
     //         console.log(num + " x " + i + " = " + (num * i));
     //     }
     // }
-    //
-    // showMultiplicationTable(15);
+
+    // showMultiplicationTable(150);
 
     /* 3. Use a for loop and the code from the previous lessons to generate 10 random numbers
         between 20 and 200 and output to the console whether each number is odd or even.
