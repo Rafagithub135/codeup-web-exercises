@@ -23,28 +23,26 @@
      */
 
 
-    function analyzeColor(inputColor) {
-        let colorName = prompt("Enter a color:").toLowerCase();
-        if (inputColor === 'red') {
-            return 'Most fire trucks are red';
-        } else if (inputColor === 'blue') {
-            return 'The ocean, looked at from a distance seems to be blue.';
-        } else if (inputColor === 'yellow') {
-            return 'The sun is yellow';
-        } else if (inputColor === 'white') {
-            return 'Snow is white.';
-        } else if (inputColor === 'green') {
-            return 'Green is the color of grass.';
-        } else
-            alert(inputColor + ' is not a color available.  Please try another color.');
-    }
+    // function analyzeColor(inputColor) {
+    //     if (inputColor === 'red') {
+    //         return 'Most fire trucks are red';
+    //     } else if (inputColor === 'blue') {
+    //         return 'The ocean, looked at from a distance seems to be blue.';
+    //     } else if (inputColor === 'yellow') {
+    //         return 'The sun is yellow';
+    //     } else if (inputColor === 'white') {
+    //         return 'Snow is white.';
+    //     } else if (inputColor === 'green') {
+    //         return 'Green is the color of grass.';
+    //     } else
+    //         alert(inputColor + ' is not a color available.  Please try another color.');
+    // }
 
-    console.log(analyzeColor('red'));
-    console.log(analyzeColor('blue'));
-    console.log(analyzeColor('Yellow'));
-    console.log(analyzeColor('white'));
-    console.log(analyzeColor('green'));
-    console.log(analyzeColor('gren'));
+    // console.log(analyzeColor('red'));
+    // console.log(analyzeColor('blue'));
+    // console.log(analyzeColor('yellow'));
+    // console.log(analyzeColor('white'));
+    // console.log(analyzeColor('green'));
 
 
 // Don't change the next two lines!
@@ -69,7 +67,7 @@
      * Comment out the code above, and refactor your function to use a switch-case statement
      */
 
-    // switch (colorName) {
+    // switch (randomColor) {
     //     case 'red':
     //         return 'Most fire trucks are red';
     //     case 'blue':
@@ -81,7 +79,7 @@
     //     case 'green':
     //         return 'Green is the color of grass.';
     //     default:
-    //         alert(colorName + ' is not a color available.  Please try another color.');
+    //         alert(randomColor + ' is not a color available.  Please try another color.');
     // }
 
     /**
@@ -192,21 +190,19 @@
      * HINT: The way we prompt for a value could be improved
      */
 
-    // if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.');) {
+    function userNumber() {
+        if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.')) {
+            let enteredNumber = parseInt(prompt('Please enter a number: '));
+            if (!isNaN(enteredNumber)){
+                alert('Your number plus 100 is ' + (parseFloat(enteredNumber) + 100));
+                alert(enteredNumber >= 0 ? "Your number is positive." : "Your number is negative.");
+                alert(enteredNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
+            } else {
+                alert('That is the incorrect type of data! That is a/an ' + typeof someNumber);
+            }
+        }
+    }
 
-    // }
-
-    // let someNumber =
-    // if (someNumber === true) {
-    //     prompt('Enter a number: ');
-    //     console.log(someNumber);
-    //     (parseFloat(someNumber))
-    //         alert('Your number plus 100 is ' + (parseFloat(someNumber) + 100));
-    //         alert(someNumber >= 0 ? "Your number is positive." : "Your number is negative.");
-    //         alert(someNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
-    //     } else {
-    //         alert('That is the incorrect type of data! That is a ' + typeof someNumber);
-    //     }
-
+    userNumber();
 
 })();
