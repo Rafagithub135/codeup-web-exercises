@@ -14,7 +14,7 @@ function sayHello(name) {
     return 'Hello, ' + name + '.';
 }
 
-console.log(sayHello("Ralph"));
+sayHello("Ralph");
 
 /**
  * TODO:
@@ -66,6 +66,8 @@ function isTwo(num) {
     return num === 2;
 }
 
+isTwo(random);
+
 console.log(isTwo(random), random);
 
 /**
@@ -98,10 +100,6 @@ let tipPercentage = parseFloat(prompt('What is the percentage you would like to 
 
 alert("Your tip amount is $" + calculateTip(tipPercentage, totalBill) + " today.");
 
-    // let totalBill = parseFloat(prompt("Hey what was your total bill today?"));
-    // let tipPercentage = parseFloat(prompt("How much of a tip would you like to give?"))/100;
-    //
-    // alert("You'll add $" + calculateTip(tipPercentage, totalBill).toFixed(2) + " to your bill today.");
 /**
 //  * TODO:
 //  * Create a function named `applyDiscount`. This function should accept a price
@@ -125,22 +123,5 @@ function applyDiscount(price, discount) {
 }
 
 console.log(applyDiscount(100, .15));
-
-
-
-/**
- * TODO:
- * Create a function named `applyDiscount`. This function should accept a price
- * (before a discount is applied), and a discount percentage (a number between 0
- * and 1). It should return the result of applying the discount to the original
- * price.
- *
- * Example:
- * > var originalPrice = 100;
- * > var discountPercent = .2; // 20%
- * > applyDiscount(originalPrice, discountPercent) // 80
- *
- * > applyDiscount(45.99, 0.12) // 40.4712
- */
 
 })()
