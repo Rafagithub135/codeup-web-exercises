@@ -1,5 +1,6 @@
+"use strict";
 (function () {
-    "use strict";
+
 
     /**
      * TODO:
@@ -7,7 +8,7 @@
      * 'names'.
      */
 
-    var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
+    let names = ['Ralph', 'Marc', 'Tom', 'Mike'];
 
     /**
      * TODO:
@@ -15,7 +16,6 @@
      * array.
      */
 
-    var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
     console.log(names.length);
 
     /**
@@ -24,7 +24,6 @@
      * accessing each element's index.
      */
 
-    var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
     console.log(names[0]);
     console.log(names[1]);
     console.log(names[2]);
@@ -37,9 +36,7 @@
      * array.
      */
 
-    var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
-    for (var i = 0; i < names.length; i++) ;
-    {
+    for (let i = 0; i < names.length; i++) {
         console.log('The name at index ' + i + ' is ' + names[i]);
     }
 
@@ -48,7 +45,6 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    var names = ['Ralph', 'Marc', 'Tom', 'Mike'];
     names.forEach(function (name) {
         console.log(name + ' is a name in the array.');
     });
@@ -71,12 +67,15 @@
     function first(names) {
         return names[0];
     }
+
     function second(names) {
         return names[1];
     }
+
     function last(names) {
-        return names[names.length -1];
+        return names[names.length - 1];
     }
+
     console.log(names[0]);
     console.log(names[1]);
     console.log(names[names.length - 1]);
