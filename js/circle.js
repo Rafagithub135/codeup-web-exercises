@@ -1,16 +1,16 @@
-// (function() {
-    "use strict";
+"use strict";
+(function() {
+
 
     // create a circle object
-    var circle = {
+    let circle = {
         radius: 3,
+
 
         // TODO: complete this method
         // hint: area = pi * radius^2
 
         getArea: function () {
-
-
             return; // TODO: return the proper value
         },
 
@@ -38,4 +38,5 @@
     circle.logInfo(false);
     console.log("Circle information rounded to the nearest whole number");
     circle.logInfo(true);
-// })();
+
+})();
