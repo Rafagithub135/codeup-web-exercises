@@ -168,13 +168,25 @@ books.forEach(function(book, index) {
  *   `showBookInfo` function.
  */
 
-// let createBook;
-// createBook = function(title, author) {
-//     return {index + 1,
-//         author:firstName + ' ' + author:lastName,
-//         title}
-// }
-//
-// console.log('The Plus', 'Greg Gutfeld');
+function createBook(title, authorFirstName, authorLastName) {
+    let addBook = {
+        title: title,
+        author: {
+            firstName: authorFirstName,
+            lastName: authorLastName,
+        }
+    }
+    books.push(addBook);
+    return addBook;
+}
+
+function displayBookInformation(book) {
+    console.log('Book # ' + (books.indexOf(book) + 1));
+    console.log('Title: ' + book.title);
+    console.log('Author: ' + book.firstName + ' ' + book.lastName);
+    console.log('---');
+}
+
+createBook('Walkaway', 'Cory', 'Doctorow');
 
 // })();
