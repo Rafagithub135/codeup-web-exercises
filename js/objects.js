@@ -168,13 +168,13 @@ books.forEach(function(book, index) {
  *   `showBookInfo` function.
  */
 
-let createBook;
-createBook = function(title, author) {
-    return {index + 1,
-        author:firstName + ' ' + author:lastName,
-        title}
-}
-
-console.log('The Plus', 'Greg Gutfeld');
+// let createBook;
+// createBook = function(title, author) {
+//     return {index + 1,
+//         author:firstName + ' ' + author:lastName,
+//         title}
+// }
+//
+// console.log('The Plus', 'Greg Gutfeld');
 
 // })();
