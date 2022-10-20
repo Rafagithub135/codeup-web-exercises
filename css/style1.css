@@ -1,0 +1,47 @@
+head, h1 {
+    color: crimson;
+    text-align: center;
+    font-size: 60px;
+}
+h6 {
+    font-size: 10px;
+    color: azure;
+}
+div1 {
+    color: darkblue;
+    text-align: left;
+    font-size: 20px;
+}
+h2 {
+    color: aqua;
+    text-align: left;
+}
+div2 {
+    color: aqua;
+    text-align: left;
+}
+ul, ol {
+    color: aqua;
+    text-align: Left;
+}
+div3 {
+    color: aqua;
+}
+h3 {
+    color: #2B2E34;
+    text-align: center;
+}
+body {
+    background-color: aliceblue;
+    background-size: cover;
+    margin: 0;
+    /*font-family: link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet";*/
+}
+
+.main {
+    background: black;
+    width: 100%;
+    margin: 0em;
+    color: #F0F8FF;
+    text: white;
+}
