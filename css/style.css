@@ -28,14 +28,14 @@ div3 {
     color: aqua;
  }
 h3 {
-    color: peru;
+    color: #F6722E;
     text-align: center;
 }
 body {
     background-color: aliceblue;
     background-image: url("../img/tech.jpeg");
     background-size: cover;
-    font-family: link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet";
+    /*font-family: link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet";*/
 }
 img {
 
