@@ -8,4 +8,4 @@ function priceOfFruit(obj) {
     return obj.price;
 }
 
-console.log(priceOfFruit(fruit));
+// console.log(priceOfFruit(fruit));
