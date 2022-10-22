@@ -124,20 +124,20 @@
      * return value.
      */
 
-    // function calculateTotal(luckyNum, totalAmount) {
-    //     if (luckyNum === 0) {
-    //         return "$" + totalAmount.toFixed(2);
-    //     } else if (luckyNum === 1) {
-    //         return "$" + (totalAmount * .9).toFixed(2);
-    //     } else if (luckyNum === 2) {
-    //         return "$" + (totalAmount * .75).toFixed(2);
-    //     } else if (luckyNum === 3) {
-    //         return "$" + (totalAmount * .65).toFixed(2);
-    //     } else if (luckyNum === 4) {
-    //         return "$" + (totalAmount * .5).toFixed(2);
-    //     } else
-    //         return 'Congratulations, your bill is $0.00 today!!!'
-    // }
+    function calculateTotal(luckyNum, totalAmount) {
+        if (luckyNum === 0) {
+            return "$" + totalAmount.toFixed(2);
+        } else if (luckyNum === 1) {
+            return "$" + (totalAmount * .9).toFixed(2);
+        } else if (luckyNum === 2) {
+            return "$" + (totalAmount * .75).toFixed(2);
+        } else if (luckyNum === 3) {
+            return "$" + (totalAmount * .65).toFixed(2);
+        } else if (luckyNum === 4) {
+            return "$" + (totalAmount * .5).toFixed(2);
+        } else
+            return 'Congratulations, your bill is $0.00 today!!!'
+    }
 
     // console.log(calculateTotal(0, 100));
     // console.log(calculateTotal(1,100));
@@ -155,30 +155,29 @@
      * price before the discount was, and what their price after the discount is.
      */
 // Generate a random number between 0 and 6
-// let luckyNumber = Math.floor(Math.random() * 6);
-//
-// let totalBill = prompt('What was your total bill today?');
+let luckyNumber = Math.floor(Math.random() * 6);
+let totalBill = prompt('What was your total bill today?');
 
-// calculateTotal(luckyNumber, totalBill);
-// switch (luckyNumber) {
-//     case 0:
-//         alert('Sorry, your number didn\'t produce a discount.  Your total bill today is $' + totalBill + '.');
-//         break;
-//     case 1:
-//         alert('Congratulations, your lucky number gave you a 10% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .9));
-//         break;
-//     case 2:
-//         alert('Congratulations, your lucky number gave you a 25% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .75));
-//         break;
-//     case 3:
-//         alert('Congratulations, your lucky number gave you a 35% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .65));
-//         break;
-//     case 4:
-//         alert('Congratulations, your lucky number gave you a 50% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .5));
-//         break;
-//     case 5:
-//         alert('Congratulations, your lucky number gives you a 100% discount.  Your items were $' + totalBill + ', but due to your lucky number, your items are free today.  Enjoy your day and thank you for shopping at Wally World');
-// }
+calculateTotal(luckyNumber, totalBill);
+switch (luckyNumber) {
+    case 0:
+        alert('Your lucky number is 0. Sorry, your number didn\'t produce a discount.  Your total bill today is $' + totalBill + '.');
+        break;
+    case 1:
+        alert('Your lucky number is 1.Congratulations, your lucky number gave you a 10% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .9));
+        break;
+    case 2:
+        alert('Your lucky number is 2. Congratulations, your lucky number gave you a 25% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .75));
+        break;
+    case 3:
+        alert('Your lucky number is 3. Congratulations, your lucky number gave you a 35% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .65));
+        break;
+    case 4:
+        alert('Your lucky number is 4. Congratulations, your lucky number gave you a 50% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .5));
+        break;
+    case 5:
+        alert('Your lucky number is 5. Congratulations, your lucky number gives you a 100% discount.  Your items were $' + totalBill + ', but due to your lucky number, your items are free today.  Enjoy your day and thank you for shopping at Wally World');
+}
     /**
      * TODO:
      * Write some JavaScript that uses a `confirm` dialog to ask the user if they
