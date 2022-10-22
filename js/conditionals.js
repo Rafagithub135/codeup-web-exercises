@@ -126,15 +126,15 @@
 
     // function calculateTotal(luckyNum, totalAmount) {
     //     if (luckyNum === 0) {
-    //         return totalAmount;
+    //         return "$" + totalAmount.toFixed(2);
     //     } else if (luckyNum === 1) {
-    //         return totalAmount * .9;
+    //         return "$" + (totalAmount * .9).toFixed(2);
     //     } else if (luckyNum === 2) {
-    //         return totalAmount * .75;
+    //         return "$" + (totalAmount * .75).toFixed(2);
     //     } else if (luckyNum === 3) {
-    //         return totalAmount * .65;
+    //         return "$" + (totalAmount * .65).toFixed(2);
     //     } else if (luckyNum === 4) {
-    //         return totalAmount * .5;
+    //         return "$" + (totalAmount * .5).toFixed(2);
     //     } else
     //         return 'Congratulations, your bill is $0.00 today!!!'
     // }
