@@ -34,8 +34,9 @@
     //         return 'Snow is white.';
     //     } else if (inputColor === 'green') {
     //         return 'Green is the color of grass.';
-    //     } else
+    //     } else {
     //         alert(inputColor + ' is not a color available.  Please try another color.');
+    //      }
     // }
 
     // console.log(analyzeColor('red'));
@@ -193,7 +194,7 @@
     function userNumber() {
         if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.')) {
             let enteredNumber = parseInt(prompt('Please enter a number: '));
-            if (!isNaN(enteredNumber)){
+            if (!isNaN(enteredNumber)) {
                 alert('Your number plus 100 is ' + (parseFloat(enteredNumber) + 100));
                 alert(enteredNumber >= 0 ? "Your number is positive." : "Your number is negative.");
                 alert(enteredNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
