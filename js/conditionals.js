@@ -68,28 +68,28 @@
      * Comment out the code above, and refactor your function to use a switch-case statement
      */
 
-    function analyzeColor(inputColor) {
-        switch (inputColor) {
-            case 'red':
-                return 'Most fire trucks are red';
-            case 'blue':
-                return 'The ocean, looked at from a distance seems to be blue.';
-            case 'yellow':
-                return 'The sun is yellow';
-            case 'white':
-                return 'Snow is white.';
-            case 'green':
-                return 'Green is the color of grass.';
-            default:
-                inputColor + ' is not a color available.  Please try another color.';
-        }
-    }
+    // function analyzeColor(inputColor) {
+    //     switch (inputColor) {
+    //         case 'red':
+    //             return 'Most fire trucks are red';
+    //         case 'blue':
+    //             return 'The ocean, looked at from a distance seems to be blue.';
+    //         case 'yellow':
+    //             return 'The sun is yellow';
+    //         case 'white':
+    //             return 'Snow is white.';
+    //         case 'green':
+    //             return 'Green is the color of grass.';
+    //         default:
+    //             inputColor + ' is not a color available.  Please try another color.';
+    //     }
+    // }
 
-    console.log(analyzeColor('red'));
-    console.log(analyzeColor('blue'));
-    console.log(analyzeColor('yellow'));
-    console.log(analyzeColor('white'));
-    console.log(analyzeColor('green'));
+    // console.log(analyzeColor('red'));
+    // console.log(analyzeColor('blue'));
+    // console.log(analyzeColor('yellow'));
+    // console.log(analyzeColor('white'));
+    // console.log(analyzeColor('green'));
 
     /**
      * TODO:
@@ -98,9 +98,9 @@
      * function to show it to the user.
      */
 
-    let colorName = prompt('Enter a color: ').toLowerCase();
+    // let colorName = prompt('Enter a color: ').toLowerCase();
 
-    alert(analyzeColor(colorName));
+    // alert(analyzeColor(colorName));
 
     /* ########################################################################## */
 
