@@ -24,34 +24,10 @@
      * string, and <li> tags around each planet.
      */
 
-    let planetsList = ['Mercury', '<br>', 'Venus', '<br>', 'Earth', '<br>', 'Mars', '<br>', 'Jupiter', '<br>', 'Saturn', '<br>', 'Uranus', '<br>','Neptune'];
-    console.log(planetsList);
+    planetsArray.join('<br>');
+    console.log(planetsArray);
 
-planetsList = '<ul>'
-'<li>'
-'Mercury'
-'</li>'
-'<li>'
-'Venus'
-'</li>'
-'<li>'
-'Earth'
-'</li>'
-'<li>'
-'Mars'
-'</li>'
-'<li>'
-'Jupiter'
-'</li>'
-'<li>'
-'Saturn'
-'</li>'
-'<li>'
-'Uranus'
-'</li>'
-'<li>'
-'Neptune'
-'</li>'
-'</ul>';
+    let planetsList = ['<ul> ' + planetsArray.join(' <br>, ') + ' </ul>']
+    console.log(planetsList);
 
 })();

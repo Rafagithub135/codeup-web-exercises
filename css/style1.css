@@ -1,3 +1,5 @@
+{box-sizing: border-box;}
+
 head, h1 {
     color: crimson;
     text-align: center;
@@ -19,45 +21,30 @@ h2 {
 div2 {
     color: aqua;
     text-align: left;
- }
+}
 ul, ol {
     color: aqua;
     text-align: Left;
 }
 div3 {
     color: aqua;
- }
+}
 h3 {
-    color: #F6722E;
-    text-align: center;
+    color: #2B2E34;
+    text-align: left;
+    margin: 0;
 }
 body {
     background-color: aliceblue;
-    background-image: url("../img/tech.jpeg");
     background-size: cover;
+    margin: 0;
     /*font-family: link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet";*/
 }
 
-/*.fancy-header {*/
-/*    color: blue;*/
-/*    text-decoration: underline;*/
-
-/*h1, h2 {*/
-/*    color: peru;*/
-/*    text-decoration: underline;*/
-/*}*/
-/*h3 {*/
-/*    color: aqua;*/
-/*    text-align: center;*/
-/*}*/
-
-/*ul, ol, p, a, table {*/
-/*    color: aquamarine;*/
-/*}*/
-/*ul {*/
-/*    list-style-type: disc;*/
-/*    color: darkorange;*/
-/*}*/
-/*ol {*/
-/*    list-style-type: upper-roman;*/
-/*}*/
+.main {
+    background: black;
+    width: 100%;
+    margin: 0em;
+    color: #F0F8FF;
+    text: white;
+}
