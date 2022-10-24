@@ -252,3 +252,35 @@ typeof 'codeup' === 'string'
 6 % 3 === 0
 5 % 2 !== 0
 
+function increment(input) {
+    if(isNaN(parseNumber(input))) {
+        return false
+    } else {
+        return parseNumber(input) + 1;
+    }
+}
+
+function increment(input) {
+    if(isNaN(parseNumber(input))) {
+        return false
+    } else {
+        return parseNumber(input) + 1;
+    }
+}
+
+function add(x,y) {
+    if (isNaN(x) || isNaN(y) || typeof x === 'boolean' || typeof y === 'boolean') {
+        return false;
+    } else {
+        return parseFloat(x) + parseFloat(y);
+    }
+}
+
+function add(a,b){
+    if(isNaN(parseNumber(a)) || isNaN(parseNumber(b))) {
+        return false
+    } else {
+        return parseNumber(a) + parseNumber(b);
+    }
+}
+
