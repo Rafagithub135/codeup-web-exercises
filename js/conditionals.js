@@ -23,26 +23,27 @@
      */
 
 
-    // function analyzeColor(inputColor) {
-    //     if (inputColor === 'red') {
-    //         return 'Most fire trucks are red';
-    //     } else if (inputColor === 'blue') {
-    //         return 'The ocean, looked at from a distance seems to be blue.';
-    //     } else if (inputColor === 'yellow') {
-    //         return 'The sun is yellow';
-    //     } else if (inputColor === 'white') {
-    //         return 'Snow is white.';
-    //     } else if (inputColor === 'green') {
-    //         return 'Green is the color of grass.';
-    //     } else
-    //         alert(inputColor + ' is not a color available.  Please try another color.');
-    // }
+        // function analyzeColor(inputColor) {
+        //     if (inputColor === 'red') {
+        //         return 'Most fire trucks are red';
+        //     } else if (inputColor === 'blue') {
+        //         return 'The ocean, looked at from a distance seems to be blue.';
+        //     } else if (inputColor === 'yellow') {
+        //         return 'The sun is yellow';
+        //     } else if (inputColor === 'white') {
+        //         return 'Snow is white.';
+        //     } else if (inputColor === 'green') {
+        //         return 'Green is the color of grass.';
+        //     } else {
+        //         inputColor + ' is not a color available.  Please try another color.';
+        //      }
+        // }
 
-    // console.log(analyzeColor('red'));
-    // console.log(analyzeColor('blue'));
-    // console.log(analyzeColor('yellow'));
-    // console.log(analyzeColor('white'));
-    // console.log(analyzeColor('green'));
+        // console.log(analyzeColor('red'));
+        // console.log(analyzeColor('blue'));
+        // console.log(analyzeColor('yellow'));
+        // console.log(analyzeColor('white'));
+        // console.log(analyzeColor('green'));
 
 
 // Don't change the next two lines!
@@ -67,20 +68,28 @@
      * Comment out the code above, and refactor your function to use a switch-case statement
      */
 
-    // switch (randomColor) {
-    //     case 'red':
-    //         return 'Most fire trucks are red';
-    //     case 'blue':
-    //         return 'The ocean, looked at from a distance seems to be blue.';
-    //     case 'yellow':
-    //         return 'The sun is yellow';
-    //     case 'white':
-    //         return 'Snow is white.';
-    //     case 'green':
-    //         return 'Green is the color of grass.';
-    //     default:
-    //         alert(randomColor + ' is not a color available.  Please try another color.');
+    // function analyzeColor(inputColor) {
+    //     switch (inputColor) {
+    //         case 'red':
+    //             return 'Most fire trucks are red';
+    //         case 'blue':
+    //             return 'The ocean, looked at from a distance seems to be blue.';
+    //         case 'yellow':
+    //             return 'The sun is yellow';
+    //         case 'white':
+    //             return 'Snow is white.';
+    //         case 'green':
+    //             return 'Green is the color of grass.';
+    //         default:
+    //             inputColor + ' is not a color available.  Please try another color.';
+    //     }
     // }
+
+    // console.log(analyzeColor('red'));
+    // console.log(analyzeColor('blue'));
+    // console.log(analyzeColor('yellow'));
+    // console.log(analyzeColor('white'));
+    // console.log(analyzeColor('green'));
 
     /**
      * TODO:
@@ -90,9 +99,8 @@
      */
 
     // let colorName = prompt('Enter a color: ').toLowerCase();
-    //
-    // analyzeColor(colorName)
-    //     alert('You chose the color ' + colorName + '.');
+
+    // alert(analyzeColor(colorName));
 
     /* ########################################################################## */
 
@@ -118,15 +126,15 @@
 
     // function calculateTotal(luckyNum, totalAmount) {
     //     if (luckyNum === 0) {
-    //         return totalAmount;
+    //         return "$" + totalAmount.toFixed(2);
     //     } else if (luckyNum === 1) {
-    //         return totalAmount * .9;
+    //         return "$" + (totalAmount * .9).toFixed(2);
     //     } else if (luckyNum === 2) {
-    //         return totalAmount * .75;
+    //         return "$" + (totalAmount * .75).toFixed(2);
     //     } else if (luckyNum === 3) {
-    //         return totalAmount * .65;
+    //         return "$" + (totalAmount * .65).toFixed(2);
     //     } else if (luckyNum === 4) {
-    //         return totalAmount * .5;
+    //         return "$" + (totalAmount * .5).toFixed(2);
     //     } else
     //         return 'Congratulations, your bill is $0.00 today!!!'
     // }
@@ -148,28 +156,27 @@
      */
 // Generate a random number between 0 and 6
 // let luckyNumber = Math.floor(Math.random() * 6);
-//
 // let totalBill = prompt('What was your total bill today?');
 
 // calculateTotal(luckyNumber, totalBill);
 // switch (luckyNumber) {
 //     case 0:
-//         alert('Sorry, your number didn\'t produce a discount.  Your total bill today is $' + totalBill + '.');
+//         alert('Your lucky number is 0. Sorry, your number didn\'t produce a discount.  Your total bill today is $' + totalBill + '.');
 //         break;
 //     case 1:
-//         alert('Congratulations, your lucky number gave you a 10% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .9));
+//         alert('Your lucky number is 1.Congratulations, your lucky number gave you a 10% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .9));
 //         break;
 //     case 2:
-//         alert('Congratulations, your lucky number gave you a 25% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .75));
+//         alert('Your lucky number is 2. Congratulations, your lucky number gave you a 25% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .75));
 //         break;
 //     case 3:
-//         alert('Congratulations, your lucky number gave you a 35% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .65));
+//         alert('Your lucky number is 3. Congratulations, your lucky number gave you a 35% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .65));
 //         break;
 //     case 4:
-//         alert('Congratulations, your lucky number gave you a 50% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .5));
+//         alert('Your lucky number is 4. Congratulations, your lucky number gave you a 50% discount today. Your previous bill today was $' + totalBill + ' and your bill after your discount is $' + totalBill - (totalBill * .5));
 //         break;
 //     case 5:
-//         alert('Congratulations, your lucky number gives you a 100% discount.  Your items were $' + totalBill + ', but due to your lucky number, your items are free today.  Enjoy your day and thank you for shopping at Wally World');
+//         alert('Your lucky number is 5. Congratulations, your lucky number gives you a 100% discount.  Your items were $' + totalBill + ', but due to your lucky number, your items are free today.  Enjoy your day and thank you for shopping at Wally World');
 // }
     /**
      * TODO:
@@ -190,19 +197,19 @@
      * HINT: The way we prompt for a value could be improved
      */
 
-    function userNumber() {
-        if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.')) {
-            let enteredNumber = parseInt(prompt('Please enter a number: '));
-            if (!isNaN(enteredNumber)){
-                alert('Your number plus 100 is ' + (parseFloat(enteredNumber) + 100));
-                alert(enteredNumber >= 0 ? "Your number is positive." : "Your number is negative.");
-                alert(enteredNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
-            } else {
-                alert('That is the incorrect type of data! That is a/an ' + typeof someNumber);
-            }
-        }
-    }
+    // function userNumber() {
+    //     if (confirm('Would you like to enter a number? Click "OK" for yes or "Cancel" for no.')) {
+    //         let enteredNumber = parseInt(prompt('Please enter a number: '));
+    //         if (!isNaN(enteredNumber)) {
+    //             alert('Your number plus 100 is ' + (parseFloat(enteredNumber) + 100));
+    //             alert(enteredNumber >= 0 ? "Your number is positive." : "Your number is negative.");
+    //             alert(enteredNumber % 2 === 0 ? "Your number is even." : "Your number is odd.");
+    //         } else {
+    //             alert('That is the incorrect type of data! That is a/an ' + typeof someNumber);
+    //         }
+    //     }
+    // }
 
-    userNumber();
+    // userNumber();
 
 })();
