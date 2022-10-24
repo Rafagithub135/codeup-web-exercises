@@ -2,40 +2,75 @@ head, h1 {
     color: crimson;
     text-align: center;
     font-size: 60px;
+    text-decoration: underline;
 }
+
 h6 {
     font-size: 10px;
     color: azure;
 }
+
 div1 {
     color: darkblue;
     text-align: left;
     font-size: 20px;
 }
+
 h2 {
     color: aqua;
     text-align: left;
 }
+
 div2 {
     color: aqua;
     text-align: left;
- }
+}
+
 ul, ol {
     color: aqua;
     text-align: Left;
 }
+
+.square {
+    list-style-type: square;
+}
+
 div3 {
     color: aqua;
- }
+}
+
 h3 {
     color: #F6722E;
     text-align: center;
 }
+
 body {
     background-color: aliceblue;
     background-image: url("../img/tech.jpeg");
     background-size: cover;
-    /*font-family: link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet";*/
+}
+
+tr, td {
+    font-size: 25px;
+}
+
+a:link {
+    color: blue;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color: green;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color: cyan;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color: orange;
 }
 
 /*.fancy-header {*/
