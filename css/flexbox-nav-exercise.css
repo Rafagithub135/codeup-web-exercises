@@ -1,95 +1,57 @@
-html {
+* {
     box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
+    margin: 0;
 }
 
 body {
-    font-family: sans-serif;
-    margin: auto;
-    background-color: #b4d455;
+    margin: 0;
+    background-color: #7cb342;
 }
 
-a {
-    color: white;
-    display: inline-block;
+nav {
+    background-color: grey;
+    justify-content: space-around;
 }
 
 .nav-bar {
     color: white;
     display: flex;
     padding: 2px;
-    margin: auto;
 }
+
+ul {
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: Work Sans sans-serif;
+    padding: 1em;
+    display: inline-block;
+    justify-content: start;
+}
+
 nav a:hover {
     background: blue;
-    display: inline-block;
 }
 
-.logo {
-    font-family: Montserrat;
-    text: 3em;
-    padding: 0em .2em;
-    align-content: center;
+a.logo {
+    font-family: Montserrat sans-serif;
+    font-size: 3em;
+    padding: .2em 0;
+    align-items: center;
 }
 
-.work {
-    font-family: Work Sans;
-    align-content: center;
-}
-.container {
-    max-width: 750px;
+li:nth-of-type(5) {
     margin: auto;
-    display: flex;
-    justify-content: center;
-    /* TODO: Make this a flex container and align it's items to the center*/
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.2);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 4px;
-    text-align: center;
-    flex-basis: 100%;
-    align-self: center;
-    /*  TODO: Change this flex items basis to 100% of the page  */
-}
-
-.card-title {
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-    padding-bottom: 1em;
-}
-
-.feature-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.feature-item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px;
-}
-
-.price {
-    font-size: 50px;
-    font-family: serif;
-    margin: 10px 0;
-}
-
-.btn-primary {
-    text-decoration: none;
-    background: #847477;
-    padding: 10px;
-    color: white;
-    border-radius: 4px;
+footer {
+    background-color: black;
+    color: wheat;
 }
