@@ -17,7 +17,6 @@
 
         div {
             align-content: center;
-            Can
         }
     </style>
 </head>
@@ -72,14 +71,14 @@
         e.preventDefault();
         let address = document.getElementById("setMarker").value;
         console.log(address);
-        geocode(address, MAPBOX_API_TOKEN).then(function(coordinates){
+        geocode(address, MAPBOX_API_TOKEN).then(function (coordinates) {
             console.log(coordinates);
             let userMarker = new mapboxgl.Marker()
                 .setlgnLat(coordinates)
                 .addTo(map);
         })
 
-    //     let address = $("#setMarker").val();
+        //     let address = $("#setMarker").val();
     })
 </script>
 </body>

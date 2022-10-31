@@ -284,48 +284,65 @@
 //     }
 // }
 //
-const hamsters = [
-    {
-        name: "hamtaro",
-        heightInMM: 86,
-        fur: ['orange', 'white'],
-        gender: 'male',
-        dateOfBirth: 'August 6',
-    }, {
-        name: "Bijou",
-        heightInMM: 75,
-        fur: ['white'],
-        gender: 'female',
-        dateOfBirth: 'July 10',
-    }, {
-        name: "Oxnard",
-        heightInMM: 100,
-        fur: ['grey', 'white'],
-        gender: 'male',
-        dateOfBirth: 'May 3',
-    }, {
-        name: "Boss",
-        heightInMM: 120,
-        fur: ['brown', 'white'],
-        gender: 'male',
-        dateOfBirth: 'September 22',
-    }, {
-        name: "Snoozer",
-        heightInMM: 85,
-        fur: ['brown', 'white', 'pink'],
-        gender: 'male',
-        dateOfBirth: 'January 14',
-    },
-]
+// const hamsters = [
+//     {
+//         name: "hamtaro",
+//         heightInMM: 86,
+//         fur: ['orange', 'white'],
+//         gender: 'male',
+//         dateOfBirth: 'August 6',
+//     }, {
+//         name: "Bijou",
+//         heightInMM: 75,
+//         fur: ['white'],
+//         gender: 'female',
+//         dateOfBirth: 'July 10',
+//     }, {
+//         name: "Oxnard",
+//         heightInMM: 100,
+//         fur: ['grey', 'white'],
+//         gender: 'male',
+//         dateOfBirth: 'May 3',
+//     }, {
+//         name: "Boss",
+//         heightInMM: 120,
+//         fur: ['brown', 'white'],
+//         gender: 'male',
+//         dateOfBirth: 'September 22',
+//     }, {
+//         name: "Snoozer",
+//         heightInMM: 85,
+//         fur: ['brown', 'white', 'pink'],
+//         gender: 'male',
+//         dateOfBirth: 'January 14',
+//     },
+// ]
+//
+// function getTallestHamster(arr) {
+//     let eachHeight = {heightInMM: 0};
+//     arr.forEach(function (el) {
+//         if (el.heightInMM > eachHeight.heightInMM) {
+//             eachHeight = el;
+//         }
+//     });
+//     return eachHeight;
+// }
+//
+// console.log(getTallestHamster(hamsters));
 
-function getTallestHamster(arr) {
-    let eachHeight = {heightInMM: 0};
-    arr.forEach(function (el) {
-        if (el.heightInMM > eachHeight.heightInMM) {
-            eachHeight = el;
+// Fizz Buzz exercise
+
+function fizzBuzz() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log('FizzBuzz');
+        } else if (i % 3 === 0) {
+            console.log('Fizz');
+        } else if (i % 5 === 0) {
+            console.log('Buzz');
+        } else {
+            console.log(i)
         }
-    });
-    return eachHeight;
+    }
 }
-
-console.log(getTallestHamster(hamsters));
+fizzBuzz();

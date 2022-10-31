@@ -7,6 +7,7 @@
 }
 * {
     box-sizing: border-box;
+    margin: .5em;
 }
 body, html {
     background-color: var(--main-bg);
@@ -79,7 +80,7 @@ a {
 
 }
 .profile-items {
-    padding: 0px;
+    padding: 0;
     list-style-type: none
 }
 .profile-entry {

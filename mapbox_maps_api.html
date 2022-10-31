@@ -24,7 +24,6 @@
 <div id='map' class="mx-auto mt-20px"></div>
 
 
-
 <form class="mx-auto w-25 mt-2">
     <label for="zoom">Set Zoom: </label>
     <input class="my-2" type="text" name="zoom" id="zoom">
@@ -72,7 +71,7 @@
         e.preventDefault();
         let address = document.getElementById("setMarker").value;
         console.log(address);
-        geocode(address, MAPBOX_API_TOKEN).then(function(coordinates){
+        geocode(address, MAPBOX_API_TOKEN).then(function (coordinates) {
             console.log(coordinates);
             let userMarker = new mapboxgl.Marker()
                 .setlgnLat(coordinates)

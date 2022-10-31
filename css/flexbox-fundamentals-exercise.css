@@ -95,7 +95,7 @@ section:nth-of-type(3) h3 {
 }
 
 .orange-circle {
-    background: orange;
+    background: #FFA500;
     width: 2em;
     height: 2em;
     border-radius: 1em;
