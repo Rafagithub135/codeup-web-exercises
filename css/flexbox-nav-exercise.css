@@ -10,12 +10,12 @@ body {
 
 nav {
     background-color: grey;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 .nav-bar {
     color: white;
-    display: flex;
+    /*display: flex;*/
     padding: 2px;
 }
 
