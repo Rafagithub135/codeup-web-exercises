@@ -1,10 +1,26 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.navbar-nav {
+    margin: 0;
+}
+
+.navbar-nav>ul {
+     margin: 0;
+ }
+
 .jumbotron {
     height: 346px;
     background-image: url("/img/pizza-jumbo.png");
     background-size: cover;
 }
 
-/*.banner {*/
-/*    opacity: 10%;*/
-/*    background-color: .bg-light;*/
-/*}*/
+.banner {
+    align-content: center;
+}
