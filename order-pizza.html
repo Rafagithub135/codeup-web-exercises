@@ -17,12 +17,12 @@
         <h3>Order Online</h3>
         <h4>Menu</h4>
         <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Zip Code" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search stores near you!</button>
+            <input class="form-control me-2" type="search" placeholder="Zip Code" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search stores near you!</button>
         </form>
     </div>
     <div>
-    <i class="fa-solid fa-user"></i> Sign Up!
+        <i class="fa-solid fa-user"></i> Sign Up!
     </div>
 </nav>
 <div class="container">
@@ -51,15 +51,17 @@
                 <div class="card-body">
                     <h5 class="card-title">Hand Tossed</h5>
                     <p class="card-text">Garlic seasoned crust with a rich, buttery taste.</p>
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <button type="radio" name="size">Small (10")</button>
+                    <button type="radio" name="size">Medium (12")</button>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Crispy Thin</h5>
-                    <p class="card-text">Thin enough for optimum crispy to crunchy ration.</p>
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <p class="card-text">Thin enough for optimum crispy to crunchy ratio.</p>
+                    <button type="radio" name="crust">Medium (12")</button>
+                    <button type="radio" name="crust">Large (14")</button>
                 </div>
             </div>
         </div>
@@ -73,7 +75,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Cheese</h5>
                     <p class="card-text">How Much?</p>
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <select name="cheese" id="normal">Normal</select>
+                    <select name="cheese" id="extra">Extra</select>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -81,9 +84,11 @@
                 <div class="card-body">
                     <h5 class="card-title">Sauce</h5>
                     <p class="card-text">What Type?</p>
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <select name="sauce" id="tomato">Tomato</select>
+                    <select name="sauce" id="white">White</select>
                     <p class="card-text">How Much?</p>
-                    <!-- <a href... -->
+                    <select name="qsauce" id="snormal">Normal</select>
+                    <select name="qsauce" id="sextra">Extra</select>
                 </div>
             </div>
         </div>
@@ -96,14 +101,28 @@
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Choose Meats</h5>
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <input type="checkbox" name="meat1" id="beef">
+                    <label for="beef">Beef</label>
+                    <input type="checkbox" name="meat2" id="ham">
+                    <label for="ham">Ham</label>
+                    <input type="checkbox" name="meat3" id="philly">
+                    <label for="philly">Philly Steak</label>
+                    <input type="checkbox" name="meat4" id="bacon">
+                    <label for="bacon">Bacon</label>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Choose Non-Meats</h5>
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    <input type="checkbox" name="nmeat1" id="gpeppers">
+                    <label for="gpeppers">Green Peppers</label>
+                    <input type="checkbox" name="nmeat2" id="mrooms">
+                    <label for="mrooms">Mushrooms</label>
+                    <input type="checkbox" name="nmeat3" id="onions">
+                    <label for="onions">Onions</label>
+                    <input type="checkbox" name="nmeat4" id="jalapenos">
+                    <label for="jalapenos">Jalapeno Peppers</label>
                 </div>
             </div>
         </div>
