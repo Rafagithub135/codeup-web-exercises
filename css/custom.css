@@ -1,0 +1,10 @@
+.jumbotron {
+    height: 346px;
+    background-image: url("/img/pizza-jumbo.png");
+    background-size: cover;
+}
+
+.banner {
+    opacity: 10%;
+    background-color: .bg-light;
+}
