@@ -21,6 +21,7 @@ ul {
     list-style: none;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -40,7 +41,7 @@ a.logo {
     font-family: Montserrat sans-serif;
     font-size: 3em;
     padding: .2em 0;
-    align-items: center;
+
 }
 
 li:nth-of-type(5) {

@@ -284,39 +284,39 @@
 //     }
 // }
 //
-// const hamsters = [
-//     {
-//         name: "hamtaro",
-//         heightInMM: 86,
-//         fur: ['orange', 'white'],
-//         gender: 'male',
-//         dateOfBirth: 'August 6',
-//     }, {
-//         name: "Bijou",
-//         heightInMM: 75,
-//         fur: ['white'],
-//         gender: 'female',
-//         dateOfBirth: 'July 10',
-//     }, {
-//         name: "Oxnard",
-//         heightInMM: 100,
-//         fur: ['grey', 'white'],
-//         gender: 'male',
-//         dateOfBirth: 'May 3',
-//     }, {
-//         name: "Boss",
-//         heightInMM: 120,
-//         fur: ['brown', 'white'],
-//         gender: 'male',
-//         dateOfBirth: 'September 22',
-//     }, {
-//         name: "Snoozer",
-//         heightInMM: 85,
-//         fur: ['brown', 'white', 'pink'],
-//         gender: 'male',
-//         dateOfBirth: 'January 14',
-//     },
-// ]
+const hamsters = [
+    {
+        name: "hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: 'male',
+        dateOfBirth: 'August 6',
+    }, {
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: 'female',
+        dateOfBirth: 'July 10',
+    }, {
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: 'male',
+        dateOfBirth: 'May 3',
+    }, {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: 'male',
+        dateOfBirth: 'September 22',
+    }, {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', 'pink'],
+        gender: 'male',
+        dateOfBirth: 'January 14',
+    },
+]
 //
 // function getTallestHamster(arr) {
 //     let eachHeight = {heightInMM: 0};
@@ -332,17 +332,44 @@
 
 // Fizz Buzz exercise
 
-function fizzBuzz() {
-    for (let i = 1; i <= 100; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log('FizzBuzz');
-        } else if (i % 3 === 0) {
-            console.log('Fizz');
-        } else if (i % 5 === 0) {
-            console.log('Buzz');
-        } else {
-            console.log(i)
-        }
+// function fizzBuzz() {
+//     for (let i = 1; i <= 100; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log('FizzBuzz');
+//         } else if (i % 3 === 0) {
+//             console.log('Fizz');
+//         } else if (i % 5 === 0) {
+//             console.log('Buzz');
+//         } else {
+//             console.log(i)
+//         }
+//     }
+// }
+// fizzBuzz();
+
+// Today's warmup: Write a function that takes in an array of objects and returns the average of the heightInMM properties from each object.
+
+// function getAverageHeight(arr) {
+//     let eachHeight = {heightInMM: 0};
+//     arr.forEach(function (el)) {
+//         if (el.heightInMM > 0) {
+//             eachHeight += arr.heightInMM;
+//         }
+//     } return eachHeight/eachHeight.length;
+// }
+
+function getAverageHeight(arr) {
+    let totalHeight = 0;
+    for (let element of arr) {
+        totalHeight += element.heightInMM;
     }
+    return totalHeight / arr.length;
 }
-fizzBuzz();
+
+console.log(getAverageHeight(hamsters));
+
+
+
+
+
+
