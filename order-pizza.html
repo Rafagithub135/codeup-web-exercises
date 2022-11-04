@@ -27,107 +27,111 @@
 </nav>
 <div class="container">
     <nav class="jumbotron align-items-center d-flex">
-            <h1 class="text-center bg-light pt-3 pb-3 w-100 opacity-75">Welcome to Pizza World!</h1>
+        <h1 class="text-center bg-light pt-3 pb-3 w-100 opacity-75">Welcome to Pizza World!</h1>
     </nav>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="badge bg-secondary">1</span>Size and Crust</button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><span class="badge bg-secondary">1</span>Size
+                and Crust
+            </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><span class="badge bg-secondary">2</span>Cheese and Sauce</button>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><span class="badge bg-secondary">2</span>Cheese
+                and Sauce
+            </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><span class="badge bg-secondary">3</span>Toppings</button>
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false"><span class="badge bg-secondary">3</span>Toppings
+            </button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">First</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Second</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Third</div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Choose Size and Crust</h5>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Hand Tossed</h5>
-                    <p class="card-text">Garlic seasoned crust with a rich, buttery taste.</p>
-                    <input type="radio" name="size" id="small">
-                    <label for="small">Small (10")</label>
-                    <input type="radio" name="size" id="medium">
-                    <label for="medium">Medium (12")</label>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Crispy Thin</h5>
-                    <p class="card-text">Thin enough for optimum crispy to crunchy ratio.</p>
-                    <input type="radio" name="crust" id="medthin">
-                    <label for="medthin">Medium (12")</label>
-                    <input type="radio" name="crust" id="large">
-                    <label for="large">Large (14")</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Choose Cheese and Sauce</h5>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Cheese</h5>
-                    <p class="card-text">How Much?</p>
-                    <select name="cheese" id="normal">Normal</select>
-                    <select name="cheese" id="extra">Extra</select>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sauce</h5>
-                    <p class="card-text">What Type?</p>
-                    <select name="sauce" id="tomato">Tomato</select>
-                    <select name="sauce" id="white">White</select>
-                    <p class="card-text">How Much?</p>
-                    <select name="qsauce" id="snormal">Normal</select>
-                    <select name="qsauce" id="sextra">Extra</select>
+                    <h5 class="card-title">Choose Size and Crust</h5>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Tossed</h5>
+                            <p class="card-text">Garlic seasoned crust with a rich, buttery taste.</p>
+                            <input type="radio" name="size" id="small">
+                            <label for="small">Small (10")</label>
+                            <input type="radio" name="size" id="medium">
+                            <label for="medium">Medium (12")</label>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Crispy Thin</h5>
+                            <p class="card-text">Thin enough for optimum crispy to crunchy ratio.</p>
+                            <input type="radio" name="crust" id="medthin">
+                            <label for="medthin">Medium (12")</label>
+                            <input type="radio" name="crust" id="large">
+                            <label for="large">Large (14")</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Choose Toppings</h5>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Choose Meats</h5>
-                    <input type="checkbox" name="meat1" id="beef">
-                    <label for="beef">Beef</label>
-                    <input type="checkbox" name="meat2" id="ham">
-                    <label for="ham">Ham</label>
-                    <input type="checkbox" name="meat3" id="philly">
-                    <label for="philly">Philly Steak</label>
-                    <input type="checkbox" name="meat4" id="bacon">
-                    <label for="bacon">Bacon</label>
+                    <h5 class="card-title">Choose Cheese and Sauce</h5>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese</h5>
+                            <p class="card-text">How Much?</p>
+                            <select name="cheese" id="normal">Normal</select>
+                            <select name="cheese" id="extra">Extra</select>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sauce</h5>
+                            <p class="card-text">What Type?</p>
+                            <select name="sauce" id="tomato">Tomato</select>
+                            <select name="sauce" id="white">White</select>
+                            <p class="card-text">How Much?</p>
+                            <select name="qsauce" id="snormal">Normal</select>
+                            <select name="qsauce" id="sextra">Extra</select>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Choose Non-Meats</h5>
-                    <input type="checkbox" name="nmeat1" id="gpeppers">
-                    <label for="gpeppers">Green Peppers</label>
-                    <input type="checkbox" name="nmeat2" id="mrooms">
-                    <label for="mrooms">Mushrooms</label>
-                    <input type="checkbox" name="nmeat3" id="onions">
-                    <label for="onions">Onions</label>
-                    <input type="checkbox" name="nmeat4" id="jalapenos">
-                    <label for="jalapenos">Jalapeno Peppers</label>
+                    <h5 class="card-title">Choose Toppings</h5>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Choose Meats</h5>
+                            <input type="checkbox" name="meat1" id="beef">
+                            <label for="beef">Beef</label>
+                            <input type="checkbox" name="meat2" id="ham">
+                            <label for="ham">Ham</label>
+                            <input type="checkbox" name="meat3" id="philly">
+                            <label for="philly">Philly Steak</label>
+                            <input type="checkbox" name="meat4" id="bacon">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Choose Non-Meats</h5>
+                            <input type="checkbox" name="nmeat1" id="gpeppers">
+                            <label for="gpeppers">Green Peppers</label>
+                            <input type="checkbox" name="nmeat2" id="mrooms">
+                            <label for="mrooms">Mushrooms</label>
+                            <input type="checkbox" name="nmeat3" id="onions">
+                            <label for="onions">Onions</label>
+                            <input type="checkbox" name="nmeat4" id="jalapenos">
+                            <label for="jalapenos">Jalapeno Peppers</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
