@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand navbar-light light">
     <div class="container-fluid">
-        <h2>Pizza World</h2>
+        <h3>Pizza World</h3>
         <h3>Order Online</h3>
         <h4>Menu</h4>
         <form class="d-flex">
@@ -27,8 +27,11 @@
 </nav>
 <div class="container">
     <nav class="jumbotron align-items-center d-flex">
-        <h1 class="text-center bg-light pt-3 pb-3 w-100 opacity-75">Welcome to Pizza World!</h1>
+        <h1 class="text-center bg-light pt-2 pb-2 w-100 opacity-75">Welcome to Pizza World!</h1>
     </nav>
+    <br>
+    <br>
+    <h1>Build your own pizza!</h1>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active w-100" id="size-crust" data-bs-toggle="tab" data-bs-target="#home" type="button"
@@ -75,6 +78,7 @@
                             <label for="large">Large (14")</label>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-primary offset-10">Next Step <i class="fa-solid fa-greater-than"></i></button>
                 </div>
             </div>
         </div>
@@ -86,39 +90,29 @@
                         <div class="card-body">
                             <h5 class="card-title">Cheese</h5>
                             <p class="card-text">How Much?</p>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><button class="dropdown-item" type="button">Normal</button></li>
-                                    <li><button class="dropdown-item" type="button">Extra</button></li>
-                                </ul>
-                            </div>
+                            <select class="dropdown w-100" name="cheese" ">
+                            <option value="normal">Normal</option>
+                            <option value="extra">Extra</option>
+                            </select>
                         </div>
                     </div>
                     <div class="card w-100" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Sauce</h5>
                             <p class="card-text">What Type?</p>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><button class="dropdown-item" type="button">Tomato</button></li>
-                                    <li><button class="dropdown-item" type="button">White</button></li>
-                                </ul>
-                            </div>
+                            <select class="dropdown w-100" name="sauce">
+                            <option value="tomato">Tomato</option>
+                            <option value="white">White</option>
+                            </select>
                             <p class="card-text">How Much?</p>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><button class="dropdown-item" type="button">Normal</button></li>
-                                    <li><button class="dropdown-item" type="button">Extra</button></li>
-                                </ul>
-                            </div>
+                            <select class="dropdown w-100" name="quantity">
+                            <option value="normal">Normal</option>
+                            <option value="extra">Extra</option>
+                            </select>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-primary offset-9"><i class="fa-solid fa-less-than"></i> Previous</button>
+                    <button type="button" class="btn btn-primary">Next <i class="fa-solid fa-greater-than"></i></button>
                 </div>
             </div>
         </div>
@@ -158,6 +152,7 @@
                             <label for="jalapenos">Jalapeno Peppers</label>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-primary offset-10">Checkout <i class="fa-regular fa-cart-shopping"></i></button>
                 </div>
             </div>
         </div>
