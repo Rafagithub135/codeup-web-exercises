@@ -284,39 +284,39 @@
 //     }
 // }
 //
-const hamsters = [
-    {
-        name: "hamtaro",
-        heightInMM: 86,
-        fur: ['orange', 'white'],
-        gender: 'male',
-        dateOfBirth: 'August 6',
-    }, {
-        name: "Bijou",
-        heightInMM: 75,
-        fur: ['white'],
-        gender: 'female',
-        dateOfBirth: 'July 10',
-    }, {
-        name: "Oxnard",
-        heightInMM: 100,
-        fur: ['grey', 'white'],
-        gender: 'male',
-        dateOfBirth: 'May 3',
-    }, {
-        name: "Boss",
-        heightInMM: 120,
-        fur: ['brown', 'white'],
-        gender: 'male',
-        dateOfBirth: 'September 22',
-    }, {
-        name: "Snoozer",
-        heightInMM: 85,
-        fur: ['brown', 'white', 'pink'],
-        gender: 'male',
-        dateOfBirth: 'January 14',
-    },
-]
+// const hamsters = [
+//     {
+//         name: "hamtaro",
+//         heightInMM: 86,
+//         fur: ['orange', 'white'],
+//         gender: 'male',
+//         dateOfBirth: 'August 6',
+//     }, {
+//         name: "Bijou",
+//         heightInMM: 75,
+//         fur: ['white'],
+//         gender: 'female',
+//         dateOfBirth: 'July 10',
+//     }, {
+//         name: "Oxnard",
+//         heightInMM: 100,
+//         fur: ['grey', 'white'],
+//         gender: 'male',
+//         dateOfBirth: 'May 3',
+//     }, {
+//         name: "Boss",
+//         heightInMM: 120,
+//         fur: ['brown', 'white'],
+//         gender: 'male',
+//         dateOfBirth: 'September 22',
+//     }, {
+//         name: "Snoozer",
+//         heightInMM: 85,
+//         fur: ['brown', 'white', 'pink'],
+//         gender: 'male',
+//         dateOfBirth: 'January 14',
+//     },
+// ]
 //
 // function getTallestHamster(arr) {
 //     let eachHeight = {heightInMM: 0};
@@ -358,18 +358,82 @@ const hamsters = [
 //     } return eachHeight/eachHeight.length;
 // }
 
-function getAverageHeight(arr) {
-    let totalHeight = 0;
-    for (let element of arr) {
-        totalHeight += element.heightInMM;
-    }
-    return totalHeight / arr.length;
+// function getAverageHeight(arr) {
+//     let totalHeight = 0;
+//     for (let element of arr) {
+//         totalHeight += element.heightInMM;
+//     }
+//     return totalHeight / arr.length;
+// }
+
+// console.log(getAverageHeight(hamsters));
+
+
+const hamsters = [
+    {
+        name: "hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: 'male',
+        dateOfBirth: 'August 6',
+    }, {
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: 'female',
+        dateOfBirth: 'July 10',
+    }, {
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: 'male',
+        dateOfBirth: 'May 3',
+    }, {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: 'male',
+        dateOfBirth: 'September 22',
+    }, {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', 'pink'],
+        gender: 'male',
+        dateOfBirth: 'January 14',
+    },
+]
+
+function getHamsterNames(arr) {
+    let names = [];
+    arr.forEach(function (el) {
+        names.push(el.name);
+    });
+    return names;
 }
 
-console.log(getAverageHeight(hamsters));
+// Write a function that takes in a grocery item object and returns a string representing the
+// price per item for that object
 
+let potatoes = {
+    name: potatoes,
+    quantity: 20,
+    totalPrice: 47
+};
 
+function getGroceryPricePerItem(obj) {
+    return obj.price;
+}  
 
+console.log(getGroceryPricePerItem(potatoes));
 
+// Define a function named lowerCase that takes in an input and returns that input as a string in all lower case letters. Returns false if the input passed is not a string.
 
+function lowerCase(input) {
+    if (typeof input === 'string') {
+        return input.toLowerCase();
+    } else {
+        return false;
+    }
+}
 
+console.log(lowerCase('CODEUP'));
