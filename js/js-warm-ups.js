@@ -284,39 +284,39 @@
 //     }
 // }
 //
-// const hamsters = [
-//     {
-//         name: "hamtaro",
-//         heightInMM: 86,
-//         fur: ['orange', 'white'],
-//         gender: 'male',
-//         dateOfBirth: 'August 6',
-//     }, {
-//         name: "Bijou",
-//         heightInMM: 75,
-//         fur: ['white'],
-//         gender: 'female',
-//         dateOfBirth: 'July 10',
-//     }, {
-//         name: "Oxnard",
-//         heightInMM: 100,
-//         fur: ['grey', 'white'],
-//         gender: 'male',
-//         dateOfBirth: 'May 3',
-//     }, {
-//         name: "Boss",
-//         heightInMM: 120,
-//         fur: ['brown', 'white'],
-//         gender: 'male',
-//         dateOfBirth: 'September 22',
-//     }, {
-//         name: "Snoozer",
-//         heightInMM: 85,
-//         fur: ['brown', 'white', 'pink'],
-//         gender: 'male',
-//         dateOfBirth: 'January 14',
-//     },
-// ]
+const hamsters = [
+    {
+        name: "hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: 'male',
+        dateOfBirth: 'August 6',
+    }, {
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: 'female',
+        dateOfBirth: 'July 10',
+    }, {
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: 'male',
+        dateOfBirth: 'May 3',
+    }, {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: 'male',
+        dateOfBirth: 'September 22',
+    }, {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', 'pink'],
+        gender: 'male',
+        dateOfBirth: 'January 14',
+    },
+]
 //
 // function getTallestHamster(arr) {
 //     let eachHeight = {heightInMM: 0};
@@ -358,58 +358,18 @@
 //     } return eachHeight/eachHeight.length;
 // }
 
-// function getAverageHeight(arr) {
-//     let totalHeight = 0;
-//     for (let element of arr) {
-//         totalHeight += element.heightInMM;
-//     }
-//     return totalHeight / arr.length;
-// }
-
-// console.log(getAverageHeight(hamsters));
-
-write a function that takes in an array of objects and returns an array of strings that are the names of the hamsters.
-
-const hamsters = [
-    {
-        name: "hamtaro",
-        heightInMM: 86,
-        fur: ['orange', 'white'],
-        gender: 'male',
-        dateOfBirth: 'August 6',
-    }, {
-        name: "Bijou",
-        heightInMM: 75,
-        fur: ['white'],
-        gender: 'female',
-        dateOfBirth: 'July 10',
-    }, {
-        name: "Oxnard",
-        heightInMM: 100,
-        fur: ['grey', 'white'],
-        gender: 'male',
-        dateOfBirth: 'May 3',
-    }, {
-        name: "Boss",
-        heightInMM: 120,
-        fur: ['brown', 'white'],
-        gender: 'male',
-        dateOfBirth: 'September 22',
-    }, {
-        name: "Snoozer",
-        heightInMM: 85,
-        fur: ['brown', 'white', 'pink'],
-        gender: 'male',
-        dateOfBirth: 'January 14',
-    },
-]
-
-function getHamsterNames(arr) {
-    let names = [];
+function getAverageHeight(arr) {
+    let totalHeight = 0;
     for (let element of arr) {
-        names.push(element.name);
+        totalHeight += element.heightInMM;
     }
-    return names;
+    return totalHeight / arr.length;
 }
 
-console.log(getHamsterNames(hamsters));
+console.log(getAverageHeight(hamsters));
+
+
+
+
+
+
