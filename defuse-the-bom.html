@@ -18,7 +18,7 @@
     // TODO: This function needs to be called once every second
     var onceASecond = setInterval(function updateTimer() {
         if (detonationTimer == 0) {
-            alert('EXTERMINATE!');
+            window.location = "bom-boom.html";
             document.body.innerHTML = '';
         } else if (detonationTimer > 0) {
             document.getElementById('timer').innerHTML = detonationTimer;
