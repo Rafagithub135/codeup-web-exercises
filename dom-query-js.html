@@ -25,8 +25,19 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button type="button" class="main-header">Change Main Header Text</button>
+<br>
+<button type="button" class="sub-header">Change The Sub Header</button>
+<br>
+<button type="button" class="list">Change Even List Items Red</button>
+<br>
+<button type="button" class="listBlue">Change First List Item Blue</button>
+<br>
+<button type="button" class="subp">Change Sub-Paragraph To Phrase</button>
+
+
 <script>
-    (function() {
+    (function () {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
 
@@ -34,7 +45,6 @@
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = 'JavaScript is Cool';
 
         // TODO: Uncomment the next line and get the sub header element by id
 
@@ -42,7 +52,7 @@
 
         // TODO: Set the text color of subHeader to blue
 
-        subHeader.style.color = 'blue';
+        // subHeader.style.color = 'blue';
 
         // TODO: Uncomment the next line and get all list items
 
@@ -51,13 +61,13 @@
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
 
-        for (var i = 0; i < listItems.length; i++) {
-            if (i % 2 === 1) listItems[i].style.color = "grey";
-            if (listItems[i].getAttribute("data-dbid") === "1"){
-                listItems[i].style.color = "blue";
-            }
-        }
-        console.log(listItems[i]);
+        // for (var i = 0; i < listItems.length; i++) {
+        //     if (i % 2 === 1) listItems[i].style.color = "grey";
+        //     if (listItems[i].getAttribute("data-dbid") === "1") {
+        //         listItems[i].style.color = "blue";
+        //     }
+        // }
+        // console.log(listItems[i]);
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
 
@@ -65,9 +75,54 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        subParagraphs[0].innerHTML = 'Mission Accomplished!';
+        // subParagraphs[0].innerHTML = 'Mission Accomplished!';
+
+        // Add 4 buttons to the page. Attach click event listeners to each of the buttons and have the handlers perform the modifications that were automatically taking place. For example, the first button should set inner html of mainHeader to "JavaScript is Cool".
+
+        var buttonsMain = document.getElementsByClassName('main-header');
+        for (var i = 0; i < buttonsMain.length; i++) {
+            buttonsMain[i].addEventListener('click', function () {
+                mainHeader.innerHTML = 'JavaScript is Cool';
+            });
+        }
+
+        var buttonsSub = document.getElementsByClassName('sub-header');
+        for (var i = 0; i < buttonsSub.length; i++) {
+            buttonsSub[i].addEventListener('click', function () {
+                subHeader.style.color = 'blue';
+            });
+        }
+
+        var buttonList = document.getElementsByClassName('list');
+        for (var i = 0; i < buttonList.length; i++) {
+            buttonList[i].addEventListener('click', function () {
+                for (var i = 0; i < listItems.length; i++) {
+                    if (i % 2 === 1) listItems[i].style.color = "red";
+                }
+            });
+        }
+
+        var buttonListBlue = document.getElementsByClassName('listBlue');
+        for (var i = 0; i < buttonListBlue.length; i++) {
+            buttonListBlue[i].addEventListener('click', function () {
+                for (var i = 0; i < listItems.length; i++) {
+                    if (listItems[i].getAttribute("data-dbid") === "1") {
+                        listItems[i].style.color = "blue";
+                    }
+                }
+            });
+        }
+
+        var buttonSubp = document.getElementsByClassName('subp');
+        for (var i = 0; i < buttonSubp.length; i++) {
+            buttonSubp[i].addEventListener('click', function () {
+                subParagraphs[0].innerHTML = 'Mission Accomplished!';
+            });
+        }
 
     })();
+
+
 </script>
 </body>
 </html>
