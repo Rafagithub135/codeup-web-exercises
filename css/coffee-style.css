@@ -1,0 +1,23 @@
+
+
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+#roast-heading {
+    position: relative;
+    top: 10px;
+}
+
+span.roast {
+    color: gray;
+    font-size: 19px;
+}
+span.d-inline-block.mx-2.name{
+    font-size: 30px;
+}
