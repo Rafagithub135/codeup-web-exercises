@@ -1,5 +1,6 @@
 $(function () {
     let heading = $("#prime").html();
-    alert(heading);
-
+    alert("heading");
+let div1 = $("#main-div")
+    alert("div1");
 });

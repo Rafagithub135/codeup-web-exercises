@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jquery_exercises.html</title>
+    <title>Title</title>
 </head>
 <body>
 <header>
-    <h1 class="heading" id="prime">I am a Header, I'm probably important</h1>
+    <h1 class="codeup" id="pagelink">I am a Header, I'm probably important</h1>
 </header>
-<div class="division" id="main-div">
-    <main class="codeup">
-
-        <p class="flavor" id="codeup">French Vanilla</p>
-        <p class="price">$3.00</p>
-
-        <a href="#" class="" id="pageLink">Link to nowhere</a>
-
-        <ul class="codeup" id="list">
-            <li class="list-item" id="no1">Item 1</li>
-            <li class="list-item" id="no2">Item 2</li>
-            <li class="list-item" id="no3">Item 3</li>
-            <li class="list-item" id="no4">Item 4</li>
-            <li class="list-item" id="no5">Item 5</li>
-        </ul>
-
-        <div id="app"></div>
-    </main>
-</div>
-<script src="js/jquery-intro.js"></script>
+<main>
+    <a href="#" class="codeup" id="prime">Link to nowhere</a>
+    <ul id="list">
+        <li class="codeup" id="no1">Item 1</li>
+        <li class="codeup" id="no2">Item 2</li>
+        <li class="codeup" id="no3">Item 3</li>
+        <li class="code" id="no4">Item 4</li>
+        <li class="codeup" id="no5">Item 5</li>
+    </ul>
+    <div id="codeup">
+        <br>
+    </div>
+    <p class="latin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consectetur ex fugiat nemo nesciunt
+        voluptatem!</p>
+</main>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+<script>
+    // Id Selectors
+
+    // alert($("#pageLink").html());
+    // alert($("#list").html());
+    // Only the first one will be alerted.
+
+    // Class Selectors
+
+    // $('.codeup').css("border", "1px solid red");
+    // No, only the elements with the class of codeup have a red border.
+
+    // Element Selectors
+
+    // $('li').css("font-size", "20px");
+    // $('h1');
+    // $('p');
+    // $('li');
+    // alert($('h1').html());
+    // $('p, h1, li');
+</script>
+
 </body>
 </html>
