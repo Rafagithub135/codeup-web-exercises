@@ -7,7 +7,8 @@
         if (key == konamiCode[count]) {
         count++;
         if (count == konamiCode.length) {
-        alert("You have added 30 lives!"), $(this).css("background-color", "red");
+            location = "bom-boom.html";
+        alert("The world has been destroyed, but you have added 30 lives!");
         count = 0;
     }
     } else {
