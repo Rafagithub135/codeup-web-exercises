@@ -1,9 +1,11 @@
 "use strict";
 $(function () {
-
-
-
-
+    $(document).ready(function () {
+        $('#toggle-answers').click(function (e) {
+            e.preventDefault();
+            $('.invisible').toggleClass('invisible');
+        });
+    });
 })
 
 
