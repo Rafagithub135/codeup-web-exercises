@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jquery Exercises</title>
 </head>
 <body>
 <header>
@@ -14,7 +14,7 @@
         <li class="codeup" id="no1">Item 1</li>
         <li class="codeup" id="no2">Item 2</li>
         <li class="codeup" id="no3">Item 3</li>
-        <li class="code" id="no4">Item 4</li>
+        <li class="changeClass" id="no4">Item 4</li>
         <li class="codeup" id="no5">Item 5</li>
     </ul>
     <div id="codeup">
@@ -26,45 +26,6 @@
     </p>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-<script src="js/jquery-intro.js"></script>
-<script>
-    "use strict";
-
-    // Id Selectors
-
-    // alert($("#pageLink").html());
-    // alert($("#list").html());
-    // Only the first one will be alerted.
-
-    // Class Selectors
-
-    // $('.codeup').css("border", "1px solid red");
-    // No, only the elements with the class of codeup have a red border.
-
-    // Element Selectors
-
-    // $('li').css("font-size", "20px");
-    // $('h1').css("background-color", "yellow");
-    // $('p').css("background-color", "yellow");
-    // $('li').css("background-color", "yellow");
-    // alert($('h1').html());
-    // $('p, h1, li');
-
-    $('h1').click(function() {
-        $(this).css("background-color", "yellow");
-    });
-    $('p').dblclick(function() {
-        $(this).css("font-size", "18px");
-    });
-    $('li').hover(
-        function() {
-            $(this).css("color", "red");
-        },
-        function() {
-            $(this).css("color", "black");
-        }
-    );
-</script>
-
+<script src="js/jquery_exercises.js"></script>
 </body>
 </html>
