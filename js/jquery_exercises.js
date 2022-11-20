@@ -26,5 +26,5 @@ $(function () {
     // alert(title);
 
     // Multiple Selectors
-    $('h1, p, li').css('background-color', 'red');
+    // $('h1, p, li').css('background-color', 'red');
 })
