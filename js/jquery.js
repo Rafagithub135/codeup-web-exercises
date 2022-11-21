@@ -4,13 +4,14 @@ $(function () {
     let count = 0;
     $(document).keydown(function (e) {
         let key = e.which;
+        let blast = new Audio("wav/dynamite.mp3");
         if (key == konamiCode[count]) {
             count++;
             if (count == konamiCode.length) {
                 count = 0;
-                let blast = new Audio("audio/dynamite.wav");
+                blast.play();
                 location = "bom-boom.html";
-                // alert("The world has been destroyed, but you have added 30 lives!");
+                alert("The world has been destroyed, but you have added 30 lives!");
             }
         } else {
             count = 0;
