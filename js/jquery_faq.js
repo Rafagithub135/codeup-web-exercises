@@ -3,7 +3,7 @@ $(function () {
     $(document).ready(function () {
         $('#toggle-answers').click(function (e) {
             e.preventDefault();
-            $('.invisible').toggleClass('invisible');
+            $('.toggle').toggleClass('invisible')
         });
     });
     $('#highlight').click(function (e) {
@@ -12,6 +12,20 @@ $(function () {
     });
     $('h3').click(function (e) {
         e.preventDefault();
-        $('h3').children('ul').css(font-weight, 'bold');
+        $('h3').children('ul').css('font-weight', 'bold');
     });
-})
+
+    // $('#codeup').html();
+    // var h1Contents = $('#codeup').html();
+    // alert(h1Contents);
+
+    // $('#codeup').click(function() {
+    //     var h1Contents = $('#codeup').html();
+    //     alert(h1Contents);
+    // });
+    //
+    // $('#codeup').click(function() {
+    //     $(this).html('Codeup Rocks!');
+    // });
+
+});
