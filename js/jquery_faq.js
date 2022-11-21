@@ -6,6 +6,10 @@ $(function () {
             $('.toggle').toggleClass('invisible')
         });
     });
+    $('.highlight').click(function (e) {
+        e.preventDefault();
+        $(this).css('background-color', 'cyan');
+    });
     $('#highlight').click(function (e) {
         e.preventDefault();
         $('ul li:last-child').css('background-color', 'yellow');
@@ -14,18 +18,4 @@ $(function () {
         e.preventDefault();
         $('h3').children('ul').css('font-weight', 'bold');
     });
-
-    // $('#codeup').html();
-    // var h1Contents = $('#codeup').html();
-    // alert(h1Contents);
-
-    // $('#codeup').click(function() {
-    //     var h1Contents = $('#codeup').html();
-    //     alert(h1Contents);
-    // });
-    //
-    // $('#codeup').click(function() {
-    //     $(this).html('Codeup Rocks!');
-    // });
-
 });
