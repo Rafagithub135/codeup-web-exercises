@@ -16,6 +16,10 @@ $(function () {
     });
     $('h3').click(function (e) {
         e.preventDefault();
-        $('h3').children('ul').css('font-weight', 'bold');
+        $(this).next().css('font-weight', 'bold');
+    });
+    $('li').click(function (e) {
+        e.preventDefault();
+        $(this).parent().find('li:first-child').css('color', 'blue');
     });
 });
