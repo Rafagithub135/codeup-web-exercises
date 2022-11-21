@@ -10,7 +10,7 @@ $(function () {
                 count = 0;
                 let blast = new Audio("audio/dynamite.wav");
                 location = "bom-boom.html";
-                // alert("The world has been destroyed, but you have added 30 lives!");
+                alert("The world has been destroyed, but you have added 30 lives!");
             }
         } else {
             count = 0;
