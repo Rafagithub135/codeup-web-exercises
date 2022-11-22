@@ -1,11 +1,15 @@
+body {
+    margin: 10px;
+}
+
 .invisible {
     visibility: hidden;
 }
 
 .container {
 
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
+    margin: 0;
     padding: 0 20px;
 }
 
@@ -13,26 +17,55 @@ div {
     margin: 0;
 }
 
-button {
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 150px;
 }
 
-.col-md-12 {
+.btn-row {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    margin: 0 auto;
+    width: 100%;
+}
+
+.swap1 {
+    border: 2px solid black;
+    width: 200px;
+}
+
+.swap2 {
+    border: 2px solid black;
+    width: 200px;
+}
+
+.swap3 {
+    border: 2px solid black;
+    width: 200px;
 }
 
 .col-4 {
     margin: 0;
 }
 
+.image2 {
+    height: 150px;
+    width: 150px;
+}
+
+.image3 {
+    height: 150px;
+    width: 150px;
+}
+
 .frame {
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 600px;
-    width: 30%;
     border: 1px solid cyan;
     padding: 0;
     margin: 0;
@@ -52,3 +85,4 @@ button {
     background-image: url("/img/nuke-explosion2.jpeg");
     margin-top: 0;
 }
+
