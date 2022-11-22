@@ -22,9 +22,6 @@ $(function () {
         e.preventDefault();
         $(this).parent().find('li:first-child').css('color', 'blue');
     });
-    //The left frame swaps to the right and takes the image from the frame in the center.
-    // The center frame swaps randomly to either the left or right.
-    // The right frame swaps to the left and takes the image from the frame in the center.
     $('#swap').click(function (e) {
         e.preventDefault();
         let left = $('#left').attr('src="img/dark-magician.png"');
