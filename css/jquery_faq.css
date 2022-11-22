@@ -1,3 +1,28 @@
 .invisible {
     visibility: hidden;
 }
+
+.frame {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 50%;
+    border: 1px solid cyan;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.first {
+    background-image: url("/img/sunset_ocean.jpeg");
+    margin-top: 0;
+}
+
+.second {
+    background-image: url("/img/earth-to-moon.jpeg");
+    margin-top: 0;
+}
+
+.third {
+    background-image: url("/img/nuke-explosion2.jpeg");
+    margin-top: 0;
+}
