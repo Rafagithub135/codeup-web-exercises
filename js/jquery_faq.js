@@ -22,4 +22,5 @@ $(function () {
         e.preventDefault();
         $(this).parent().find('li:first-child').css('color', 'blue');
     });
+
 });
