@@ -22,8 +22,13 @@ $(function () {
         e.preventDefault();
         $(this).parent().find('li:first-child').css('color', 'blue');
     });
-    $('#swap').click(function (e) {
+    $('#swap1').click(function (e) {
         e.preventDefault();
+        
+
+
+
+
         let left = $('#left').attr('src="img/dark-magician.png"');
         let center = $('#center').attr('src="img/europa.webp"');
         let right = $('#right').attr('src="img/bomb.jpeg"');
