@@ -22,25 +22,5 @@ $(function () {
         e.preventDefault();
         $(this).parent().find('li:first-child').css('color', 'blue');
     });
-    $('#swap1').click(function (e) {
-        e.preventDefault();
-        
 
-
-
-
-        let left = $('#left').attr('src="img/dark-magician.png"');
-        let center = $('#center').attr('src="img/europa.webp"');
-        let right = $('#right').attr('src="img/bomb.jpeg"');
-        let random = Math.floor(Math.random() * 2);
-        if (random === 0) {
-            $('#left').attr('src="img/dark-magician.png"', center);
-            $('#center').attr('src="img/europa.webp"', right);
-            $('#right').attr('src="img/bomb.jpeg"', left);
-        } else {
-            $('#left').attr('src="img/dark-magician.png"', right);
-            $('#center').attr('src="img/europa.webp"', left);
-            $('#right').attr('src="img/bomb.jpeg"', center);
-        }
-    });
 });
