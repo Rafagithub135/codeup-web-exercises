@@ -16,7 +16,7 @@ $(function () {
     });
     $('h3').click(function (e) {
         e.preventDefault();
-        $(this).next().css('font-weight', 'bold');
+        $(this).next().children().css('font-weight', 'bold');
     });
     $('li').click(function (e) {
         e.preventDefault();
