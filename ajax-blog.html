@@ -23,9 +23,10 @@
                 <th>Categories</th>
                 <th>Date</th>
             </tr>
+            <tbody id="posts" class="table table-info table-striped">
+            </tbody>
         </table>
-        <div id="posts" class="table table-info table-striped">
-    </div>
+
     </div>
 </div>
 <div class="text-center">
@@ -92,12 +93,12 @@
     function loadPosts() {
         $.get("data/blog.json").done(function (info) {
             $("#posts").html("");
-            info.forEach(function (post) {
+            info.forEach(function (post, index) {
                 $("#posts").append(
                     "<tr>" +
                     "<td>" + post.title + "</td>" +
                     "<td>" + post.content + "</td>" +
-                    "<td>" + post.categories + "</td>" +
+                    "<td>" + post.categories[0] + "</td>" +
                     "<td>" + post.date + "</td>" +
                     "</tr>"
                 );
