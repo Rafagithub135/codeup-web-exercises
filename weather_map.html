@@ -20,14 +20,14 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
 <section>
     <script>
-        $.ajax("http://api.openweathermap.org/data/2.5/onecall", {
-            APPID: OPEN_WEATHER_APPID,
+        $.get("http://api.openweathermap.org/data/2.5/weather", {
+            APPID: weatherapi,
             lat: 39.9523,
             lon: -75.1638,
             units: "imperial"
         }).done(function (data) {
-            $('#weatherData').html(data.current.temp.max);
-            $('#weatherData').append(data.current.temp.min);
+            // $('#weatherData').html(data.current.temp.max);
+            // $('#weatherData').append(data.current.temp.min);
 
             <div class="card">
                 data.daily.forEach(function(dailyForcast, index){
@@ -36,7 +36,6 @@
             }
             }
             </div>
-        );
         });
     </script>
 
