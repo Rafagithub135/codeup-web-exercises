@@ -36,23 +36,36 @@ const users = [
     }
 ];
 
-let lang3 = users.filter(user => user.languages > 2);
-console.log(lang3);
+const threeLanguages = users.filter(user => user.languages.length >= 3);
+console.log(threeLanguages);
 
-let mail = users.map(user => user.email);
-console.log(mail);
+const userEmails = users.map(user => user.email);
+console.log(userEmails);
 
-let previousValue = 0;
-let years = users.reduce((previousValue, currentValue) => {
-    return previousValue + currentValue
-});
-let average = years / users.length;
-console.log(years);
-console.log(average);
+const totalYearsOfExperience = users.reduce((total,user ) => {
+    return total + user.yearsOfExperience;
+} , 0);
+console.log(totalYearsOfExperience);
+let averageYears = totalYearsOfExperience / users.length;
+console.log(averageYears);
 
-let previousMail = 0
-let mailLong = users.reduce((user.email, currentMail) => {
-    if (currentMail.length > previousMail.length) {
-
+const longestEmail = users.reduce((longest, user) => {
+    if (user.email.length > longest.length) {
+        return user.email;
+    } else {
+        return longest;
     }
-})
+} , "");
+console.log(longestEmail);
+
+const userNames = users.reduce((names, user) => {
+    return names + user.name + ", ";
+} , "Your instructors are: ");
+console.log(userNames);
+
+const uniqueLanguages = users.reduce((languages, user) => {
+    const allLanguages = languages + user.languages + ", ";
+
+    return languages + user.languages + ", ";
+} , "languages are: ");
+console.log(uniqueLanguages);

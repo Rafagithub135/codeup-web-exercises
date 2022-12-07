@@ -33,7 +33,7 @@ const users = [
 // to the languages array
 // TODO: replace the `var` keyword with `const`, then try to reassign a variable
 // declared as `const`
-const name = 'ralph';
+const name = 'Ralph';
 const email = 'mccloskey.ralph35@gmail.com';
 const languages = ['html', 'javascript', 'css', 'python'];
 
@@ -85,3 +85,7 @@ for (let developer of developers) {
     // TODO: rewrite the assignment below to use template strings
     list += '<ul>';
 console.log(list);
+
+
+// developers.push(`${name}'s email is ${email}; ${name} knows ${languages.join(', ')}`);
+// console.log(developers);
