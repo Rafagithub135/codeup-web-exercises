@@ -43,43 +43,42 @@
         crossorigin="anonymous"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script>
-    mapboxgl.accessToken = MAPBOX_API_TOKEN;
+    mapboxgl.accessToken = MAPBOX_API;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
         center: [-75.20165, 39.938525], // starting position [lng, lat]
         zoom: 15 // starting zoom
     });
-    map.setZoom(15);
-    // map.setCenter(-97.04, 30);
-    let homeMarker = new mapboxgl.Marker()
-        .setLngLat([-75.20165, 39.938525])
-        .addTo(map);
-    let codeupMarker = new mapboxgl.Marker()
-        .setLngLat([-98.48962, 29.42692])
-        .addTo(map);
-    let codeupPopup = new mapboxgl.Popup().setHTML('<p CLASS = "MT-2">Codeup</p>');
-    codeupMarker.setPopup(codeupPopup);
-
-    $("#zoomSubmit").on('click', function (e) {
-        e.preventDefault();
-        map.setZoom($("#zoom").val());
-    })
-
-
-    $('#setMarker').on('click', function (e) {
-        e.preventDefault();
-        let address = document.getElementById("setMarker").value;
-        console.log(address);
-        geocode(address, MAPBOX_API_TOKEN).then(function (coordinates) {
-            console.log(coordinates);
-            let userMarker = new mapboxgl.Marker()
-                .setlgnLat(coordinates)
-                .addTo(map);
-        })
+    // map.setZoom(15);
+    // // map.setCenter(-97.04, 30);
+    // let homeMarker = new mapboxgl.Marker()
+    //     .setLngLat([-75.20165, 39.938525])
+    //     .addTo(map);
+    // let codeupMarker = new mapboxgl.Marker()
+    //     .setLngLat([-98.48962, 29.42692])
+    //     .addTo(map);
+    // let codeupPopup = new mapboxgl.Popup().setHTML('<p CLASS = "MT-2">Codeup</p>');
+    // codeupMarker.setPopup(codeupPopup);
+    //
+    // $("#zoomSubmit").on('click', function (e) {
+    //     e.preventDefault();
+    //     map.setZoom($("#zoom").val());
+    // })
+    //
+    //
+    // $('#setMarker').on('click', function (e) {
+    //     e.preventDefault();
+    //     let address = document.getElementById("setMarker").value;
+    //     console.log(address);
+    //     geocode(address, MAPBOX_API_TOKEN).then(function (coordinates) {
+    //         console.log(coordinates);
+    //         let userMarker = new mapboxgl.Marker()
+    //             .setlgnLat(coordinates)
+    //             .addTo(map);
+    //     })
 
         //     let address = $("#setMarker").val();
-    })
 </script>
 </body>
 </html>
