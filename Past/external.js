@@ -1,11 +1,11 @@
 "use strict";
-console.log("Hello from external JavaScript");
-
-alert("Welcome to my Website!");
-
-let favColor = prompt("What is your favorite color?");
-
-alert("Wow! " + favColor + " is my favorite color too!!!");
+// console.log("Hello from external JavaScript");
+//
+// alert("Welcome to my Website!");
+//
+// let favColor = prompt("What is your favorite color?");
+//
+// alert("Wow! " + favColor + " is my favorite color too!!!");
 
 let littleMermaidDaysRented = Number(prompt("How many days did you rent The Little Mermaid?"));
 let brotherBearDaysRented = parseFloat(prompt("How many days did you rent Brother Bear?"));
